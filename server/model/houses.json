@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "houseName": "My First Happy House",
+    "houseName": "test-house",
     "users": [
       {
         "id": "a",
@@ -61,7 +61,7 @@
   },
   {
     "id": "2",
-    "houseName": "Sto Domingo",
+    "houseName": "sto-domingo",
     "users": [
       {
         "id": "a",
@@ -140,7 +140,7 @@
   },
   {
     "id": "f8cf2591-949a-4afb-bd35-48b53158fa51",
-    "houseName": "Jicama",
+    "houseName": "jicama",
     "users": [],
     "toDos": [],
     "comments": []

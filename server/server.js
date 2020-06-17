@@ -6,6 +6,7 @@ const fs = require("fs");
 
 // Controllers
 const getHouse = require("./controller/getHouse");
+const getHouses = require("./controller/getHouses");
 
 // Const App will be using Express method
 const app = express();
@@ -13,14 +14,20 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Get Houses Information
+// Get House per Name
+app.route("/houses/:houseName").get((req, res) => {
+  let houseName = req.params.houseName;
+  res.json(getHouse(houseName));
+});
+
+// Get/Post House per ID
 app
   .route("/houses")
   .get((req, res) => {
-    res.json(getHouse());
+    res.json(getHouses());
   })
   .post((req, res) => {
-    const housesArray = getHouse();
+    const housesArray = getHouses();
     const houseObject = {
       id: uuidv4(),
       houseName: req.body.houseName,
@@ -35,5 +42,3 @@ app
 
 // App listening on local host
 app.listen(5000, console.log("app is listening at http://localhost:5000"));
-
-// Heroku Installed

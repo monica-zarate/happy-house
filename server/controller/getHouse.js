@@ -1,9 +1,13 @@
 const fs = require("fs");
 
-const getHouse = () => {
-  const housesData = JSON.parse(fs.readFileSync("./model/houses.json"));
+const getHouse = (houseName) => {
+  const houseData = fs.readFileSync("./model/houses.json");
 
-  return housesData;
+  const filteredHouseData = JSON.parse(houseData).filter(
+    (house) => house.houseName === houseName
+  );
+
+  return filteredHouseData[0];
 };
 
 module.exports = getHouse;
