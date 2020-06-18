@@ -1,17 +1,22 @@
 import React from "react";
 import "./styles/main.css";
-import Axios from "axios";
 
-const videosApi = "http://localhost:5000/videos/";
-
-class House extends React.Component {
-  render() {
-    return (
+function House(props) {
+  return (
+    <div>
+      <h1>My Happy House</h1>
       <div>
-        <h1>Home Page</h1>
+        <h2>To Do</h2>
+        <ul>
+          <li>Vacuum</li>
+          <li>Laundry</li>
+          <li>Take Trash Out</li>
+          <li>Meal Prep</li>
+          <li>Add New</li>
+        </ul>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default House;

@@ -1,7 +1,8 @@
 import React from "react";
-import "./components/styles/main.css";
-import { Route, Switch } from "react-router-dom";
+import "./styles/main.css";
 import Axios from "axios";
+import { Link } from "react-router-dom";
+import logo from "../assets/icons/hh-landing.svg";
 
 // API
 const housesApi = "http://localhost:5000/houses/";
@@ -29,13 +30,27 @@ class Landing extends React.Component {
   // Not sure if it needs to be here
   componentDidMount() {}
 
-//   After Log-in get House information given it's name/ID
+  //   After Log-in get House information given it's name/ID
   componentDidUpdate() {
-      if 
+    let houseName = this.props.match.params.houseName;
+    this.getHouse(houseName);
   }
 
   render() {
-    return <div className="landing"></div>;
+    return (
+      <div className="landing">
+        <h1>Happy House</h1>
+        <img src={logo} alt="happy house logo" />
+        <div>
+          <Link to={`/join`}>
+            <button>JOIN</button>
+          </Link>
+          <Link to={`/login`}>
+            <button>LOG IN</button>
+          </Link>
+        </div>
+      </div>
+    );
   }
 }
 
