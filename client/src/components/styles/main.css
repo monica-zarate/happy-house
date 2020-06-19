@@ -125,7 +125,7 @@ body {
           align-items: center;
 }
 
-.join__new-house, .join__connect {
+.join__cta {
   padding: 0.5rem 1rem;
   width: 13rem;
   font-family: "Roboto Medium";
@@ -138,20 +138,18 @@ body {
   color: #114b5f;
 }
 
-.join__new-house:focus, .join__connect:focus {
+.join__cta:focus {
   border: 2px solid #1a936f;
   background-color: #1a936f;
 }
 
-.join__new-house:hover, .join__connect:hover {
+.join__cta:hover {
   border: 2px solid #114b5f;
   background-color: #114b5f;
   color: #c6dabf;
 }
 
-.new-house,
-.connect,
-.connect__wrapper {
+.join__container {
   padding: 2rem 1rem;
   margin: 1rem 0;
   border: 2px solid #114b5f;
@@ -159,17 +157,14 @@ body {
   border-radius: 4px;
 }
 
-.new-house__title,
-.connect__title {
+.join__title {
   color: #114b5f;
   font-family: "Roboto Medium";
   font-size: 1.2rem;
   margin: 0 0 1rem 0;
 }
 
-.new-house__form,
-.connect__form,
-.connect__input {
+.join__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +174,7 @@ body {
           flex-direction: column;
 }
 
-.new-house__form--house-name, .new-house__form--user-name, .new-house__form--email, .new-house__form--pass, .new-house__form--color, .new-house__form--icon {
+.join__input {
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
 }
