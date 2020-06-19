@@ -221,7 +221,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #9f6976;
+  border-bottom: 1px solid #114b5f;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -269,6 +269,7 @@ body {
   border-style: none;
   outline: none;
   background-color: #fafafa;
+  cursor: pointer;
 }
 
 .header__cta--img {
@@ -319,7 +320,85 @@ body {
 
 .dashboard {
   background-color: #fafafa;
-  padding: 0 1rem;
+  padding: 1rem;
+}
+
+.calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calendar__description {
+  margin: 0 auto;
+  color: #114b5f;
+  font-family: "Roboto Medium";
+}
+
+.calendar__activity-wrapper:not(:last-child) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 1rem 0;
+}
+
+.calendar__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 1rem 0;
+  border: 1px solid #114b5f;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-family: "Roboto Medium";
+  color: #114b5f;
+}
+
+.calendar__date--dotw {
+  font-size: 0.5rem;
+}
+
+.calendar__date--day {
+  font-size: 0.5rem;
+}
+
+.calendar__doing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calendar__doing--description {
+  font-size: 0.75rem;
+  border: 1px solid #714674;
+  border-radius: 4px;
+  padding: 0.25rem;
+  background-color: #714674;
+  color: #f3e9d2;
+}
+
+.profile {
+  background-color: #c6dabf;
+  padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,6 +409,112 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.profile__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 2rem 0;
+}
+
+.profile__info--user-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.profile__info--user-name {
+  font-family: "Roboto Slab Medium";
+  color: #114b5f;
+}
+
+.update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.update__input {
+  margin: 0 0 1rem 0;
+  padding: 0.25rem;
+}
+
+.update__btn {
+  margin: 0 0 1rem 0;
+  padding: 0.25rem;
+}
+
+.house {
+  background-color: #c6dabf;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.house__title {
+  font-family: "Roboto Slab Medium";
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  color: #114b5f;
+}
+
+.house__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.house__house-name {
+  color: #714674;
+}
+
+.house__icon {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 0 1rem 0;
+}
+
+.house__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.house__activity {
+  margin: 0 0 1rem 0;
 }
 
 @font-face {

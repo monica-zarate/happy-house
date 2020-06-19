@@ -4,10 +4,12 @@ import Header from "./Header";
 
 function Wall(props) {
   return (
-    <div className="wall">
+    <>
       <Header />
-      <div className="wall__container">Wall</div>
-    </div>
+      <div className="wall">
+        <div className="wall__container">Wall Component</div>
+      </div>
+    </>
   );
 }
 

@@ -5,25 +5,42 @@ import Header from "./Header";
 
 function Profile(props) {
   return (
-    <div className="profile">
+    <>
       <Header />
-      <div className="profile__info">
-        <h2 className="profile__info--user-name">Username</h2>
-        <img className="profile__info--user-icon" src={user1} alt="" />
+      <div className="profile">
+        <div className="profile__info">
+          <img className="profile__info--user-icon" src={user1} alt="" />
+          <h2 className="profile__info--user-name">User Name</h2>
+        </div>
+        <form className="update">
+          <input
+            className="update__input"
+            type="text"
+            placeholder="User Name"
+          />
+          <button className="update__btn">Update User Name</button>
+          <input className="update__input" type="text" placeholder="E-mail" />
+          <button className="update__btn">Update E-mail</button>
+          <input className="update__input" type="text" placeholder="Password" />
+
+          <button className="update__btn">Update Password</button>
+          <input
+            className="update__input"
+            type="text"
+            placeholder="User Icon"
+          />
+
+          <button className="update__btn">Update Icon</button>
+          <input
+            className="update__input"
+            type="text"
+            placeholder="User Color"
+          />
+
+          <button className="update__btn">Update Color</button>
+        </form>
       </div>
-      <div className="update">
-        <p className="update__user-name">User Name</p>
-        <button className="update__user-name--cta">Change User Name</button>
-        <p className="update__email">E-mail</p>
-        <button className="update__email--cta">Change E-mail</button>
-        <p className="update__pass">Password</p>
-        <button className="update__pass--cta">Change Password</button>
-        <p className="update__icon">User Icon</p>
-        <button className="update__icon--cta">Change Icon</button>
-        <p className="update__color">User Color</p>
-        <button className="update__color--cta">Change Color</button>
-      </div>
-    </div>
+    </>
   );
 }
 

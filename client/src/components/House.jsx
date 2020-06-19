@@ -1,21 +1,41 @@
 import React from "react";
 import "./styles/main.css";
+import Header from "./Header";
+import todo from "../assets/icons/hh-icon.svg";
 
 function House(props) {
   return (
-    <div>
-      <h1>My Happy House</h1>
-      <div>
-        <h2>To Do</h2>
-        <ul>
-          <li>Vacuum</li>
-          <li>Laundry</li>
-          <li>Take Trash Out</li>
-          <li>Meal Prep</li>
-          <li>Add New</li>
-        </ul>
+    <>
+      <Header />
+      <div className="house">
+        <h1 className="house__title">My Happy House</h1>
+        <div className="house__container">
+          <h2 className="house__house-name">To Do</h2>
+          <img className="house__icon" src={todo} alt="" />
+          <ul className="house__list">
+            <li className="house__activity">
+              {" "}
+              <button>Vacuum</button>{" "}
+            </li>
+            <li className="house__activity">
+              {" "}
+              <button> Laundry</button>
+            </li>
+            <li className="house__activity">
+              {" "}
+              <button> Take Trash Out</button>
+            </li>
+            <li className="house__activity">
+              {" "}
+              <button>Meal Prep</button>
+            </li>
+            <li className="house__activity">
+              <button>Add New </button>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

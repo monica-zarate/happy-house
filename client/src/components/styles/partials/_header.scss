@@ -1,7 +1,7 @@
 .header {
   padding: 0.5rem;
   display: flex;
-  border: 1px solid $btn;
+  border-bottom: 1px solid $highlight;
   justify-content: space-between;
   width: 20rem;
   background-color: $white;
@@ -42,6 +42,7 @@
     border-style: none;
     outline: none;
     background-color: $white;
+    cursor: pointer;
     &--img {
       width: 1.5rem;
       height: 1.5rem;

@@ -1,0 +1,37 @@
+.profile {
+  background-color: $light-green;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    margin: 0 0 2rem 0;
+
+    &--user-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &--user-name {
+      font-family: $slab-medium;
+      color: $highlight;
+    }
+  }
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    margin: 0 0 1rem 0;
+    padding: 0.25rem;
+  }
+
+  &__btn {
+    margin: 0 0 1rem 0;
+    padding: 0.25rem;
+  }
+}

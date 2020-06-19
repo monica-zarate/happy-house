@@ -1,0 +1,43 @@
+.house {
+  background-color: $light-green;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-family: $slab-medium;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    color: $highlight;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__house-name {
+    color: $btn-hover;
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__activity {
+    margin: 0 0 1rem 0;
+  }
+}
