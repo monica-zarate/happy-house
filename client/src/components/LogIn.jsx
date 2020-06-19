@@ -8,14 +8,14 @@ function LogIn(props) {
       <h1 className="login__title">Welcome back!</h1>
       <form className="login__form" action="">
         <input
-          className="login__form--user-name"
+          className="login__input"
           type="text"
           name="username"
           id="username"
           placeholder="username"
         />
         <input
-          className="login__form--pass"
+          className="login__input"
           type="text"
           name="username"
           id="username"

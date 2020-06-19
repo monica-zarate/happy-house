@@ -1,0 +1,23 @@
+.login {
+  background-color: $background-primary;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: $highlight;
+    font-family: $medium;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+  }
+}

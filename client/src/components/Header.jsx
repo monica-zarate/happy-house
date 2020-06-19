@@ -18,7 +18,7 @@ function Header() {
         <Link className="header__dashboard--link" to={`/dashboard`}>
           <img className="header__dashboard--icon" src={icon} alt="" />
         </Link>
-        <h1 className="header__dashboard--house-name">My Happy House</h1>
+        {/* <h1 className="header__dashboard--house-name">Happy House</h1> */}
       </div>
       <div className="header__menu">
         <button className="header__cta">
@@ -27,7 +27,7 @@ function Header() {
         <div className="menu">
           <div className="menu__wrapper">
             <img className="menu__wrapper--icon" src={user1} alt="" />
-            <h3 className="menu__wrapper-user-name">Username</h3>
+            <h3 className="menu__wrapper--user-name">Username</h3>
           </div>
           <div className="menu__options">
             <Link className="menu__options--link" to={`/profile`}>
