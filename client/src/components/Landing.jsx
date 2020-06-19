@@ -41,12 +41,13 @@ class Landing extends React.Component {
       <div className="landing">
         <h1 className="landing__title">Happy House</h1>
         <img className="landing__logo" src={logo} alt="happy house logo" />
+        <p className="landing__description">A tidy home sparks joy</p>
         <div className="landing__wrapper">
-          <Link className="landing__join" to={`/join`}>
-            <button className="landing__join--btn">JOIN</button>
+          <Link className="landing__link" to={`/join`}>
+            <button className="landing__btn">JOIN</button>
           </Link>
-          <Link className="landing__login" to={`/login`}>
-            <button className="landing__login--btn">LOG IN</button>
+          <Link className="landing__link" to={`/login`}>
+            <button className="landing__btn">LOG IN</button>
           </Link>
         </div>
       </div>

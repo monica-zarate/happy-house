@@ -4,9 +4,9 @@ import Header from "./Header";
 
 function Wall(props) {
   return (
-    <div>
+    <div className="wall">
       <Header />
-      <div>Wall</div>
+      <div className="wall__container">Wall</div>
     </div>
   );
 }

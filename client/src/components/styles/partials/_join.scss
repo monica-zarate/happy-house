@@ -1,0 +1,71 @@
+.join {
+  background-color: $background-primary;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__new-house,
+  &__connect {
+    padding: 0.5rem 1rem;
+    width: 13rem;
+    font-family: $medium;
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    outline: none;
+    border: 2px solid $highlight;
+    background-color: $light-green;
+    color: $highlight;
+
+    &:focus {
+      border: 2px solid $primary;
+      background-color: $primary;
+    }
+    &:hover {
+      border: 2px solid $highlight;
+      background-color: $highlight;
+      color: $light-green;
+    }
+  }
+}
+
+.new-house,
+.connect,
+.connect__wrapper {
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+  border: 2px solid $highlight;
+  width: 100%;
+  border-radius: 4px;
+  //   background-color: $light-green;
+}
+
+.new-house__title,
+.connect__title {
+  color: $highlight;
+  font-family: $medium;
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+}
+
+.new-house__form,
+.connect__form,
+.connect__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-house {
+  &__form {
+    &--house-name,
+    &--user-name,
+    &--email,
+    &--pass,
+    &--color,
+    &--icon {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+    }
+  }
+}

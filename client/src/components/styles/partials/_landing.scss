@@ -1,0 +1,59 @@
+.landing {
+  background-color: $background-primary;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-family: $slab-bold;
+    margin: 0 0 2rem 0;
+    color: $primary;
+    font-size: 2.5rem;
+  }
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 0 2rem 0;
+  }
+
+  &__description {
+    color: $highlight;
+    margin: 0 0 2rem 0;
+    font-family: $slab-medium;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+  }
+
+  &__link {
+    margin: 0 0 1rem 0;
+  }
+  &__btn {
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    font-family: $medium;
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    outline: none;
+    border: 2px solid $highlight;
+    background-color: $light-green;
+    color: $highlight;
+
+    &:focus {
+      border: 2px solid $primary;
+      background-color: $primary;
+    }
+    &:hover {
+      border: 2px solid $highlight;
+      background-color: $highlight;
+      color: $light-green;
+    }
+  }
+}

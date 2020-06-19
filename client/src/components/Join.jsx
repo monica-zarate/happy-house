@@ -70,6 +70,7 @@ function Join(props) {
         </form>
       </div>
       <div className="connect__wrapper">
+        <h2 className="connect__title">Create your profile</h2>
         <form className="connect__input" action="">
           {/* <input  className="connect__input"
             type="text"

@@ -8,41 +8,41 @@ import user1 from "../assets/icons/user1.svg";
 
 function Header() {
   return (
-    <div>
-      <header>
-        <div>
-          <Link to={`/wall`}>
-            <img src={wall} alt="" />
-          </Link>
-        </div>
-        <div>
-          <Link to={`/dashboard`}>
-            <img src={icon} alt="" />
-          </Link>
-          <h1>My Happy House</h1>
-        </div>
-        <div>
-          <button>
-            <img src={menu} alt="" />
-          </button>
-          <div>
-            <img src={user1} alt="" />
-            <h3>Username</h3>
+    <header className="header">
+      <div className="header__wall">
+        <Link className="header__wall--link" to={`/wall`}>
+          <img className="header__wall--icon" src={wall} alt="" />
+        </Link>
+      </div>
+      <div className="header__dashboard">
+        <Link className="header__dashboard--link" to={`/dashboard`}>
+          <img className="header__dashboard--icon" src={icon} alt="" />
+        </Link>
+        <h1 className="header__dashboard--house-name">My Happy House</h1>
+      </div>
+      <div className="header__menu">
+        <button className="header__cta">
+          <img className="header__cta--img" src={menu} alt="" />
+        </button>
+        <div className="menu">
+          <div className="menu__wrapper">
+            <img className="menu__wrapper--icon" src={user1} alt="" />
+            <h3 className="menu__wrapper-user-name">Username</h3>
           </div>
-          <div>
-            <Link to={`/profile`}>
-              <button>Profile</button>
+          <div className="menu__options">
+            <Link className="menu__options--link" to={`/profile`}>
+              <button className="menu__options--btn">Profile</button>
             </Link>
-            <Link to={`/my-house`}>
-              <button>My Happy House</button>
+            <Link className="menu__options--link" to={`/my-house`}>
+              <button className="menu__options--btn">My Happy House</button>
             </Link>
-            <Link to={`/`}>
-              <button>Log Out</button>
+            <Link className="menu__options--link" to={`/`}>
+              <button className="menu__options--btn">Log Out</button>
             </Link>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 }
 
