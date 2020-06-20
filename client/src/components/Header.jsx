@@ -7,6 +7,17 @@ import menu from "../assets/icons/menu.svg";
 import user1 from "../assets/icons/user1.svg";
 
 function Header() {
+  // Display Menu Preview on Click event
+  let menuPreview = (event) => {
+    event.preventDefault();
+    let menu = document.getElementsByClassName("menu")[0];
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  };
+
   return (
     <header className="header">
       <div className="header__wall">
@@ -18,10 +29,9 @@ function Header() {
         <Link className="header__dashboard--link" to={`/dashboard`}>
           <img className="header__dashboard--icon" src={icon} alt="" />
         </Link>
-        {/* <h1 className="header__dashboard--house-name">Happy House</h1> */}
       </div>
       <div className="header__menu">
-        <button className="header__cta">
+        <button className="header__cta" onClick={menuPreview}>
           <img className="header__cta--img" src={menu} alt="" />
         </button>
         <div className="menu">

@@ -3,6 +3,7 @@ import "./styles/main.css";
 import { Link } from "react-router-dom";
 
 function Join(props) {
+  // Display elements onClick event
   let removeBtns = () => {
     let createNew = document.getElementsByClassName("join__cta")[0];
     createNew.style.display = "none";

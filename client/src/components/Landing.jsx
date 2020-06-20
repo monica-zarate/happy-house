@@ -3,8 +3,6 @@ import "./styles/main.css";
 import Axios from "axios";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/hh-landing.svg";
-import Join from "./Join";
-import LogIn from "./LogIn";
 
 // API
 const housesApi = "http://localhost:5000/houses/";
