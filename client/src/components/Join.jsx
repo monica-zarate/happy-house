@@ -3,9 +3,38 @@ import "./styles/main.css";
 import { Link } from "react-router-dom";
 
 function Join(props) {
+  let removeBtns = () => {
+    let createNew = document.getElementsByClassName("join__cta")[0];
+    createNew.style.display = "none";
+    let joinHouse = document.getElementsByClassName("join__cta")[1];
+    joinHouse.style.display = "none";
+  };
+
+  let createNew = (event) => {
+    let joinComponent = document.getElementsByClassName("join__container")[0];
+    joinComponent.style.display = "block";
+    removeBtns();
+  };
+
+  let joinHouse = (event) => {
+    let joinComponent = document.getElementsByClassName("join__container")[1];
+    joinComponent.style.display = "block";
+    removeBtns();
+  };
+
+  let profile = (event) => {
+    event.preventDefault();
+    let joinComponent = document.getElementsByClassName("join__container")[2];
+    joinComponent.style.display = "block";
+    let houseName = document.getElementsByClassName("join__container")[1];
+    houseName.style.display = "none";
+  };
+
   return (
     <div className="join">
-      <button className="join__cta">Create a new Happy House</button>
+      <button className="join__cta" onClick={createNew}>
+        Create a new Happy House
+      </button>
       <div className="join__container">
         <h2 className="join__title">Let's build your Happy House</h2>
         <form className="join__form" action="">
@@ -55,7 +84,9 @@ function Join(props) {
           <button className="join__btn">JOIN</button>
         </Link>
       </div>
-      <button className="join__cta">Join a Happy House</button>
+      <button className="join__cta" onClick={joinHouse}>
+        Join a Happy House
+      </button>
       <div className="join__container">
         <h2 className="join__title">Enter your House Name</h2>
         <form className="join__form" action="">
@@ -66,7 +97,9 @@ function Join(props) {
             id="happy-house-name"
             placeholder="Happy House Name"
           />
-          <button className="join__btn">Join</button>
+          <button className="join__btn" onClick={profile}>
+            Next
+          </button>
         </form>
       </div>
       <div className="join__container">
@@ -111,6 +144,9 @@ function Join(props) {
           <button className="join__btn">JOIN</button>
         </Link>
       </div>
+      <Link className="join__btn-link" to={`/`}>
+        <button className="join__cta">Cancel</button>
+      </Link>
     </div>
   );
 }

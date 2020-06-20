@@ -3,6 +3,8 @@ import "./styles/main.css";
 import Axios from "axios";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/hh-landing.svg";
+import Join from "./Join";
+import LogIn from "./LogIn";
 
 // API
 const housesApi = "http://localhost:5000/houses/";
@@ -23,18 +25,19 @@ class Landing extends React.Component {
   getHouse(houseName) {
     Axios.get(`${housesApi}${houseName}`)
       .then((response) => {
+        console.log(response);
         this.setState({ house: response.data });
       })
       .catch((error) => console.log(error));
   }
   // Not sure if it needs to be here
-  componentDidMount() {}
+  componentDidMount() {
+    // let houseName = this.props.match.params.houseName;
+    this.getHouse("test-house");
+  }
 
   //   After Log-in get House information given it's name/ID
-  componentDidUpdate() {
-    let houseName = this.props.match.params.houseName;
-    this.getHouse(houseName);
-  }
+  componentDidUpdate() {}
 
   render() {
     return (
@@ -43,9 +46,10 @@ class Landing extends React.Component {
         <img className="landing__logo" src={logo} alt="happy house logo" />
         <p className="landing__description">A tidy home sparks joy</p>
         <div className="landing__wrapper">
-          <Link className="landing__link" to={`/join`}>
+          <Link onClick={this.joinClick} className="landing__link" to={`/join`}>
             <button className="landing__btn">JOIN</button>
           </Link>
+
           <Link className="landing__link" to={`/login`}>
             <button className="landing__btn">LOG IN</button>
           </Link>

@@ -138,11 +138,6 @@ body {
   color: #114b5f;
 }
 
-.join__cta:focus {
-  border: 2px solid #1a936f;
-  background-color: #1a936f;
-}
-
 .join__cta:hover {
   border: 2px solid #114b5f;
   background-color: #114b5f;
@@ -150,6 +145,7 @@ body {
 }
 
 .join__container {
+  display: none;
   padding: 2rem 1rem;
   margin: 1rem 0;
   border: 2px solid #114b5f;
@@ -278,7 +274,6 @@ body {
 }
 
 .menu {
-  display: none;
   border: 1px solid #9f6976;
   padding: 1rem 1rem;
   position: fixed;

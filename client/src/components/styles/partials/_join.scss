@@ -17,10 +17,6 @@
     background-color: $light-green;
     color: $highlight;
 
-    &:focus {
-      border: 2px solid $primary;
-      background-color: $primary;
-    }
     &:hover {
       border: 2px solid $highlight;
       background-color: $highlight;
@@ -29,6 +25,7 @@
   }
 
   &__container {
+    display: none;
     padding: 2rem 1rem;
     margin: 1rem 0;
     border: 2px solid $highlight;

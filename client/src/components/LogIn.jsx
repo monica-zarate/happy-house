@@ -25,6 +25,9 @@ function LogIn(props) {
       <Link className="login__cta" to={`/dashboard`}>
         <button className="login__cta--btn">Sign In</button>
       </Link>
+      <Link className="login__cta" to={`/`}>
+        <button className="login__cta--btn">Cancel</button>
+      </Link>
     </div>
   );
 }
