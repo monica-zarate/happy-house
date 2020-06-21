@@ -59,7 +59,7 @@ function Join() {
             type="text"
             name="email"
             id="email"
-            placeholder="email"
+            placeholder="Email"
           />
           <input
             className="join__input"
@@ -69,17 +69,18 @@ function Join() {
             placeholder="Password"
           />
           <select className="join__input" name="color" id="color">
-            <option value="pink">Pink</option>
-            <option value="green">Green</option>
-            <option value="plum">Plum</option>
-            <option value="blue">Blue</option>
-            <option value="yellow">Yellow</option>
+            <option value="0">Select a Color:</option>
+            <option value="1">Yellow</option>
+            <option value="2">Green</option>
+            <option value="3">Coral</option>
+            <option value="4">Lilac</option>
           </select>
           <select className="join__input" name="icon" id="icon">
-            <option value="user1">user1</option>
-            <option value="user2">user2</option>
-            <option value="user3">user3</option>
-            <option value="user4">user4</option>
+            <option value="0">Select your Avatar:</option>
+            <option value="1">user1</option>
+            <option value="2">user2</option>
+            <option value="3">user3</option>
+            <option value="4">user4</option>
           </select>
         </form>
         <Link className="join__btn-link" to={`/dashboard`}>
@@ -119,7 +120,7 @@ function Join() {
             type="text"
             name="email"
             id="email"
-            placeholder="email"
+            placeholder="Email"
           />
           <input
             className="join__input"
@@ -129,17 +130,18 @@ function Join() {
             placeholder="Password"
           />
           <select className="join__input" name="color" id="color">
-            <option value="pink">Pink</option>
-            <option value="green">Green</option>
-            <option value="plum">Plum</option>
-            <option value="blue">Blue</option>
-            <option value="yellow">Yellow</option>
+            <option value="0">Select a Color:</option>
+            <option value="1">Yellow</option>
+            <option value="2">Green</option>
+            <option value="3">Coral</option>
+            <option value="4">Lilac</option>
           </select>
           <select className="join__input" name="icon" id="icon">
-            <option value="user1">user1</option>
-            <option value="user2">user2</option>
-            <option value="user3">user3</option>
-            <option value="user4">user4</option>
+            <option value="0">Select your Avatar:</option>
+            <option value="1">user1</option>
+            <option value="2">user2</option>
+            <option value="3">user3</option>
+            <option value="4">user4</option>
           </select>
         </form>
         <Link className="join__btn-link" to={`/dashboard`}>
