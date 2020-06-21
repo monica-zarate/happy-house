@@ -6,7 +6,7 @@ import Header from "./Header";
 function Profile(props) {
   return (
     <>
-      <Header />
+      <Header house={props.house} />
       <div className="profile">
         <div className="profile__info">
           <img className="profile__info--user-icon" src={user1} alt="" />

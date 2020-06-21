@@ -6,7 +6,7 @@ import icon from "../assets/icons/hh-landing.svg";
 import menu from "../assets/icons/menu.svg";
 import user1 from "../assets/icons/user1.svg";
 
-function Header() {
+function Header(props) {
   // Display Menu Preview on Click event
   let menuPreview = (event) => {
     event.preventDefault();
@@ -44,7 +44,9 @@ function Header() {
               <button className="menu__options--btn">My Profile</button>
             </Link>
             <Link className="menu__options--link" to={`/my-house`}>
-              <button className="menu__options--btn">My Happy House</button>
+              <button className="menu__options--btn">
+                {props.house.houseName}
+              </button>
             </Link>
             <Link className="menu__options--link" to={`/`}>
               <button className="menu__options--btn">Log Out</button>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "a",
+    "userName": "Monica",
+    "password": "1234",
+    "houseName": "test-house",
+    "color": "pink"
+  },
+  {
+    "id": "b",
+    "userName": "Manuel",
+    "password": "9876",
+    "houseName": "test-house",
+    "color": "green"
+  },
+  {
+    "id": "a",
+    "userName": "Tete",
+    "password": "1234",
+    "houseName": "sto-domingo",
+    "color": "plum"
+  },
+  {
+    "id": "b",
+    "userName": "Guante",
+    "password": "9876",
+    "houseName": "sto-domingo",
+    "color": "blue"
+  },
+  {
+    "id": "c",
+    "userName": "Petite",
+    "password": "2468",
+    "houseName": "sto-domingo",
+    "color": "yellow"
+  },
+  {
+    "id": "8604a098-f5a9-4ba5-a5e0-170e9d5e1a6b",
+    "userName": "Memin",
+    "password": "1234",
+    "houseName": "Papaya-house",
+    "color": "pink"
+  }
+]

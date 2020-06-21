@@ -31,6 +31,7 @@ function Calendar(props) {
         </div>
         <div className="calendar__doing">
           <p className="calendar__doing--description">Meal-prep</p>
+          <p className="calendar__doing--description">Meal-prep</p>
         </div>
       </div>
       <div className="calendar__activity-wrapper">
@@ -40,6 +41,24 @@ function Calendar(props) {
         </div>
         <div className="calendar__doing">
           <p className="calendar__doing--description">Grocery Shopping</p>
+        </div>
+      </div>
+      <div className="calendar__activity-wrapper">
+        <div className="calendar__date">
+          <p className="calendar__date--dotw">SUN</p>
+          <p className="calendar__date--day">21</p>
+        </div>
+        <div className="calendar__doing">
+          <p className="calendar__doing--description"></p>
+        </div>
+      </div>
+      <div className="calendar__activity-wrapper">
+        <div className="calendar__date">
+          <p className="calendar__date--dotw">SUN</p>
+          <p className="calendar__date--day">21</p>
+        </div>
+        <div className="calendar__doing">
+          <p className="calendar__doing--description"></p>
         </div>
       </div>
       <div className="calendar__activity-wrapper">

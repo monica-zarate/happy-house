@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 
   &__cta,
   &__btn {
@@ -51,7 +51,7 @@
     padding: 0 1rem;
     width: 100%;
     border-radius: 4px;
-    height: 100vh;
+    height: 100%;
   }
 
   &__title {

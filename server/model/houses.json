@@ -2,22 +2,6 @@
   {
     "id": "1",
     "houseName": "test-house",
-    "users": [
-      {
-        "id": "a",
-        "userName": "Monica",
-        "password": "1234",
-        "color": "pink",
-        "icon": "https://upload.wikimedia.org/wikipedia/en/7/7f/Sakuratsubasa.jpg"
-      },
-      {
-        "id": "b",
-        "userName": "Manuel",
-        "password": "9876",
-        "color": "green",
-        "icon": "https://upload.wikimedia.org/wikipedia/en/c/c8/SyaoranTsubasa.jpg"
-      }
-    ],
     "toDos": [
       {
         "id": "i",
@@ -62,29 +46,6 @@
   {
     "id": "2",
     "houseName": "sto-domingo",
-    "users": [
-      {
-        "id": "a",
-        "userName": "Tete",
-        "password": "1234",
-        "color": "plum",
-        "icon": "https://vignette.wikia.nocookie.net/shamanking/images/8/8a/Eliza.jpg/revision/latest?cb=20160610054604&path-prefix=en"
-      },
-      {
-        "id": "b",
-        "userName": "Guante",
-        "password": "9876",
-        "color": "blue",
-        "icon": "https://vignette.wikia.nocookie.net/shamanking/images/2/2f/Ryu.jpg/revision/latest?cb=20171224094227&path-prefix=en"
-      },
-      {
-        "id": "c",
-        "userName": "Petite",
-        "password": "2468",
-        "color": "yellow",
-        "icon": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aae2d9d7-2d5d-4e9c-8b1c-544d8c3a446a/d64ejgm-b1ceaf72-0740-4368-a16e-4a2bbbd392cd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYWFlMmQ5ZDctMmQ1ZC00ZTljLThiMWMtNTQ0ZDhjM2E0NDZhXC9kNjRlamdtLWIxY2VhZjcyLTA3NDAtNDM2OC1hMTZlLTRhMmJiYmQzOTJjZC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.Nb3FIjm4niqSo14cB7hNjYRhjgbH71ysvS9vfYIw2_o"
-      }
-    ],
     "toDos": [
       {
         "id": "i",
@@ -141,7 +102,6 @@
   {
     "id": "f8cf2591-949a-4afb-bd35-48b53158fa51",
     "houseName": "jicama",
-    "users": [],
     "toDos": [],
     "comments": []
   }

@@ -7,22 +7,23 @@
   background-color: $white;
 
   &__description {
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
     color: $highlight;
     font-family: $medium;
   }
 
-  &__activity-wrapper:not(:last-child) {
+  &__activity-wrapper {
     display: flex;
-    flex-direction: column;
-    margin: 0 0 1rem 0;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 0 0 2rem 0;
   }
   &__date {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 1rem 0;
+    // margin: 0 0 1rem 0;
     border: 1px solid $highlight;
     width: 2rem;
     height: 2rem;
@@ -41,6 +42,9 @@
 
   &__doing {
     display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 0 0 0.5rem;
 
     &--description {
       font-size: 0.75rem;
@@ -49,6 +53,7 @@
       padding: 0.25rem;
       background-color: $primary;
       color: $background-primary;
+      margin: 0 0 0.5rem 0;
     }
   }
 }

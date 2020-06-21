@@ -6,9 +6,9 @@ import todo from "../assets/icons/hh-icon.svg";
 function House(props) {
   return (
     <>
-      <Header />
+      <Header house={props.house} />
       <div className="house">
-        <h1 className="house__title">My Happy House</h1>
+        <h1 className="house__title">{props.house.houseName}</h1>
         <div className="house__container">
           <img className="house__icon" src={todo} alt="" />
           <h2 className="house__todo">To Do This Week</h2>

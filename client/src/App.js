@@ -10,6 +10,19 @@ import Profile from "./components/Profile";
 import House from "./components/House";
 
 class App extends React.Component {
+  state = {
+    house: {
+      id: "",
+      houseName: "",
+      users: [],
+      toDos: [],
+      comments: [],
+    },
+  };
+
+  houseStateUpdateHandler(houseResponse) {
+    this.setState({ house: houseResponse });
+  }
   render() {
     return (
       <div className="App">
@@ -18,10 +31,24 @@ class App extends React.Component {
 
           <Route path="/login" component={LogIn} />
           <Route path="/join" component={Join} />
-          <Route path="/dashboard" component={Dashboard} />
+          <Route
+            path="/dashboard"
+            render={() => (
+              <Dashboard
+                updateHandler={this.houseStateUpdateHandler.bind(this)}
+                house={this.state.house}
+              />
+            )}
+          />
           <Route path="/wall" component={Wall} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/my-house" component={House} />
+          <Route
+            path="/profile"
+            render={() => <Profile house={this.state.house} />}
+          />
+          <Route
+            path="/my-house"
+            render={() => <House house={this.state.house} />}
+          />
         </Switch>
       </div>
     );

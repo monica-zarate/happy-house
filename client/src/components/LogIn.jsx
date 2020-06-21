@@ -3,6 +3,13 @@ import "./styles/main.css";
 import { Link } from "react-router-dom";
 
 function LogIn() {
+  let loginHandler = (event) => {
+    //if(pwd es correcto) => llevame
+    //Sino, prevent default
+    event.preventDefault();
+    console.log("Logging in");
+    this.props.userUpdateHandler();
+  };
   return (
     <div className="login">
       <h1 className="login__title">Welcome back!</h1>
@@ -22,7 +29,7 @@ function LogIn() {
           placeholder="password"
         />
       </form>
-      <Link className="login__cta" to={`/dashboard`}>
+      <Link className="login__cta" to={`/dashboard`} onClick={loginHandler}>
         <button className="login__cta--btn">Sign In</button>
       </Link>
       <Link className="login__cta" to={`/`}>
