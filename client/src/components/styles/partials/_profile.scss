@@ -1,7 +1,7 @@
 // Profile Component Styles
 
 .profile {
-  background-color: $highlight;
+  background-color: $white;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,9 @@
 
   &__info {
     display: flex;
+    flex-direction: column;
+
+    align-items: center;
     margin: 0 0 2rem 0;
 
     &--user-icon {
@@ -17,8 +20,8 @@
     }
 
     &--user-name {
-      font-family: $slab-medium;
-      color: $highlight;
+      font-family: $slab-bold;
+      color: $primary;
     }
   }
 }
@@ -30,12 +33,34 @@
   flex-direction: column;
 
   &__input {
+    width: 12rem;
+    border-radius: 4px;
     margin: 0 0 1rem 0;
-    padding: 0.25rem;
+    border-style: none;
+    border: 2px solid $primary;
+    padding: 0.5rem;
+    outline: none;
+    &:focus {
+      border: 2px solid $highlight;
+    }
   }
 
   &__btn {
+    padding: 0.5rem 1rem;
     margin: 0 0 1rem 0;
-    padding: 0.25rem;
+    width: 12rem;
+    font-family: $medium;
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    outline: none;
+    border: 2px solid $primary;
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      border: 2px solid $highlight;
+      background-color: $highlight;
+    }
   }
 }

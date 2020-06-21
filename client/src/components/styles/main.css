@@ -111,7 +111,7 @@ body {
 }
 
 .join {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,7 +145,6 @@ body {
 }
 
 .join__cta--cancel, .join__btn--cancel {
-  padding: 0.5rem 1rem;
   width: 13rem;
   font-family: "Roboto Medium";
   cursor: pointer;
@@ -156,6 +155,10 @@ body {
   background-color: #edeff5;
   color: #95469b;
   margin: 0 0 2rem 0;
+}
+
+.join__btn-link-cancel {
+  margin: 0;
 }
 
 .join__container {
@@ -175,8 +178,9 @@ body {
 
 .join__title {
   color: #274c77;
-  font-family: "Roboto Medium";
-  font-size: 1.2rem;
+  font-family: "Roboto Slab Bold";
+  font-size: 1.5rem;
+  text-align: center;
   margin: 0 0 1rem 0;
 }
 
@@ -267,7 +271,7 @@ body {
   border: 2px solid #274c77;
   background-color: #274c77;
   color: #fafafa;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .login__cta--btn:hover {
@@ -276,7 +280,6 @@ body {
 }
 
 .login__cta--cancel {
-  padding: 0.5rem 1rem;
   width: 13rem;
   font-family: "Roboto Medium";
   cursor: pointer;
@@ -294,7 +297,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #95469b;
+  border-bottom: 2px solid #95469b;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -352,12 +355,11 @@ body {
 
 .menu {
   display: none;
-  border: 1px solid #95469b;
   padding: 1rem 1rem;
   position: fixed;
   right: 0;
   top: 3.5rem;
-  background-color: #95469b;
+  background-color: #274c77;
   height: 100vh;
 }
 
@@ -365,15 +367,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .menu__wrapper--icon {
   width: 2rem;
   height: 2rem;
+}
+
+.menu__wrapper--user-name {
+  color: #edeff5;
+  font-family: "Roboto Slab Medium";
 }
 
 .menu__options {
@@ -393,6 +404,24 @@ body {
   margin: 0 0 1rem 0;
 }
 
+.menu__options--btn {
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  font-family: "Roboto Medium";
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+  border-bottom: 2px solid #fafafa;
+  background-color: #274c77;
+  color: #fafafa;
+  font-size: 0.75rem;
+}
+
+.menu__options--btn:hover {
+  background-color: #fafafa;
+  color: #274c77;
+}
+
 .dashboard {
   background-color: #fafafa;
 }
@@ -406,6 +435,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
+  background-color: #fafafa;
 }
 
 .calendar__description {
@@ -472,7 +502,7 @@ body {
 }
 
 .profile {
-  background-color: #95469b;
+  background-color: #fafafa;
   padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,6 +520,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 0 2rem 0;
 }
 
@@ -499,8 +536,8 @@ body {
 }
 
 .profile__info--user-name {
-  font-family: "Roboto Slab Medium";
-  color: #95469b;
+  font-family: "Roboto Slab Bold";
+  color: #274c77;
 }
 
 .update {
@@ -514,17 +551,40 @@ body {
 }
 
 .update__input {
+  width: 12rem;
+  border-radius: 4px;
   margin: 0 0 1rem 0;
-  padding: 0.25rem;
+  border-style: none;
+  border: 2px solid #274c77;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.update__input:focus {
+  border: 2px solid #95469b;
 }
 
 .update__btn {
+  padding: 0.5rem 1rem;
   margin: 0 0 1rem 0;
-  padding: 0.25rem;
+  width: 12rem;
+  font-family: "Roboto Medium";
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  border: 2px solid #274c77;
+  background-color: #274c77;
+  color: #fafafa;
+}
+
+.update__btn:hover {
+  border: 2px solid #95469b;
+  background-color: #95469b;
 }
 
 .house {
-  background-color: #95469b;
+  background-color: #fafafa;
   padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,10 +599,10 @@ body {
 }
 
 .house__title {
-  font-family: "Roboto Slab Medium";
+  font-family: "Roboto Slab Bold";
   font-size: 1.5rem;
   margin: 0 0 1rem 0;
-  color: #95469b;
+  color: #274c77;
 }
 
 .house__container {
@@ -561,14 +621,25 @@ body {
           align-items: center;
 }
 
-.house__house-name {
-  color: #274c77;
+.house__icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0 1rem 0;
 }
 
-.house__icon {
-  width: 5rem;
-  height: 5rem;
+.house__todo {
+  color: #274c77;
+  font-size: 1.15rem;
   margin: 0 0 1rem 0;
+  font-family: "Roboto Medium";
+}
+
+.house__description {
+  color: #274c77;
+  margin: 0 0 2rem 0;
+  font-size: 0.7rem;
+  width: 9rem;
+  text-align: center;
 }
 
 .house__list {
@@ -588,8 +659,25 @@ body {
           align-items: center;
 }
 
-.house__activity {
+.house__activity--btn {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  font-family: "Roboto Medium";
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  border: 2px solid #95469b;
+  background-color: #95469b;
+  color: #fafafa;
   margin: 0 0 1rem 0;
+}
+
+.house__activity--btn:hover {
+  border: 2px solid #274c77;
+  background-color: #274c77;
 }
 
 @font-face {

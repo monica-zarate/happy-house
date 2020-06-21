@@ -1,15 +1,15 @@
 .house {
-  background-color: $highlight;
+  background-color: $white;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &__title {
-    font-family: $slab-medium;
+    font-family: $slab-bold;
     font-size: 1.5rem;
     margin: 0 0 1rem 0;
-    color: $highlight;
+    color: $primary;
   }
 
   &__container {
@@ -19,14 +19,24 @@
     align-items: center;
   }
 
-  &__house-name {
-    color: $primary;
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0 1rem 0;
   }
 
-  &__icon {
-    width: 5rem;
-    height: 5rem;
+  &__todo {
+    color: $primary;
+    font-size: 1.15rem;
     margin: 0 0 1rem 0;
+    font-family: $medium;
+  }
+  &__description {
+    color: $primary;
+    margin: 0 0 2rem 0;
+    font-size: 0.7rem;
+    width: 9rem;
+    text-align: center;
   }
 
   &__list {
@@ -38,6 +48,25 @@
   }
 
   &__activity {
-    margin: 0 0 1rem 0;
+    &--btn {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      padding: 0.5rem 1rem;
+      width: 10rem;
+      font-family: $medium;
+      cursor: pointer;
+      border-radius: 4px;
+      border-style: none;
+      outline: none;
+      border: 2px solid $highlight;
+      background-color: $highlight;
+      color: $white;
+      margin: 0 0 1rem 0;
+
+      &:hover {
+        border: 2px solid $primary;
+        background-color: $primary;
+      }
+    }
   }
 }

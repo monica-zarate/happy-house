@@ -10,27 +10,46 @@ function House(props) {
       <div className="house">
         <h1 className="house__title">My Happy House</h1>
         <div className="house__container">
-          <h2 className="house__house-name">To Do</h2>
           <img className="house__icon" src={todo} alt="" />
+          <h2 className="house__todo">To Do This Week</h2>
+          <p className="house__description">
+            Click on the activity you want to take care of this week
+          </p>
           <ul className="house__list">
             <li className="house__activity">
-              {" "}
-              <button>Vacuum</button>{" "}
+              <button className="house__activity--btn">Vacuuming</button>
             </li>
             <li className="house__activity">
-              {" "}
-              <button> Laundry</button>
+              <button className="house__activity--btn"> Mopping</button>
             </li>
             <li className="house__activity">
-              {" "}
-              <button> Take Trash Out</button>
+              <button className="house__activity--btn">Dusting</button>
             </li>
             <li className="house__activity">
-              {" "}
-              <button>Meal Prep</button>
+              <button className="house__activity--btn">Do the Laundry</button>
             </li>
             <li className="house__activity">
-              <button>Add New </button>
+              <button className="house__activity--btn">Wash the Dishes</button>
+            </li>
+            <li className="house__activity">
+              <button className="house__activity--btn">
+                Take out the Trash{" "}
+              </button>
+            </li>
+            <li className="house__activity">
+              <button className="house__activity--btn">Clean Bathroom</button>
+            </li>
+            <li className="house__activity">
+              <button className="house__activity--btn">Water Plants</button>
+            </li>
+            <li className="house__activity">
+              <button className="house__activity--btn">Grocery Shopping</button>
+            </li>
+            <li className="house__activity">
+              <button className="house__activity--btn">Meal Prepping</button>
+            </li>
+            <li className="house__activity">
+              <button className="house__activity--btn">Add New </button>
             </li>
           </ul>
         </div>

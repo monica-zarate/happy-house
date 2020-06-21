@@ -41,7 +41,7 @@ function Header() {
           </div>
           <div className="menu__options">
             <Link className="menu__options--link" to={`/profile`}>
-              <button className="menu__options--btn">Profile</button>
+              <button className="menu__options--btn">My Profile</button>
             </Link>
             <Link className="menu__options--link" to={`/my-house`}>
               <button className="menu__options--btn">My Happy House</button>

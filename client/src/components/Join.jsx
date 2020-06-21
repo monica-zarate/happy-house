@@ -105,7 +105,7 @@ function Join() {
         </form>
       </div>
       <div className="join__container">
-        <h2 className="join__title">Create your profile</h2>
+        <h2 className="join__title">Create your Profile</h2>
         <form className="join__form" action="">
           <input
             className="join__input"
@@ -146,7 +146,7 @@ function Join() {
           <button className="join__btn">JOIN</button>
         </Link>
       </div>
-      <Link className="join__btn-link" to={`/`}>
+      <Link className="join__btn-link-cancel" to={`/`}>
         <button className="join__cta--cancel">Cancel</button>
       </Link>
     </div>

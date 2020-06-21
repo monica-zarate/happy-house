@@ -43,7 +43,7 @@
       border: 2px solid $primary;
       background-color: $primary;
       color: $white;
-      margin: 0 0 2rem 0;
+      margin: 0 0 1rem 0;
 
       &:hover {
         border: 2px solid $highlight;
@@ -52,7 +52,6 @@
     }
 
     &--cancel {
-      padding: 0.5rem 1rem;
       width: 13rem;
       font-family: $medium;
       cursor: pointer;
