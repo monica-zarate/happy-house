@@ -1,0 +1,53 @@
+// Calendar Component Styles
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  &__description {
+    margin: 0 auto;
+    color: $highlight;
+    font-family: $medium;
+  }
+
+  &__activity-wrapper:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+  }
+  &__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    border: 1px solid $highlight;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-family: $medium;
+    color: $highlight;
+
+    &--dotw {
+      font-size: 0.5rem;
+    }
+
+    &--day {
+      font-size: 0.5rem;
+    }
+  }
+
+  &__doing {
+    display: flex;
+
+    &--description {
+      font-size: 0.75rem;
+      border: 1px solid $primary;
+      border-radius: 4px;
+      padding: 0.25rem;
+      background-color: $primary;
+      color: $background-primary;
+    }
+  }
+}

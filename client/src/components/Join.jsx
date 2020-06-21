@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/main.css";
 import { Link } from "react-router-dom";
 
-function Join(props) {
+function Join() {
   // Display elements onClick event
   let removeBtns = () => {
     let createNew = document.getElementsByClassName("join__cta")[0];
@@ -13,20 +13,21 @@ function Join(props) {
 
   let createNew = (event) => {
     let joinComponent = document.getElementsByClassName("join__container")[0];
-    joinComponent.style.display = "block";
+    joinComponent.style.display = "flex";
     removeBtns();
   };
 
   let joinHouse = (event) => {
     let joinComponent = document.getElementsByClassName("join__container")[1];
-    joinComponent.style.display = "block";
+    joinComponent.style.height = "50%";
+    joinComponent.style.display = "flex";
     removeBtns();
   };
 
   let profile = (event) => {
     event.preventDefault();
     let joinComponent = document.getElementsByClassName("join__container")[2];
-    joinComponent.style.display = "block";
+    joinComponent.style.display = "flex";
     let houseName = document.getElementsByClassName("join__container")[1];
     houseName.style.display = "none";
   };
@@ -146,7 +147,7 @@ function Join(props) {
         </Link>
       </div>
       <Link className="join__btn-link" to={`/`}>
-        <button className="join__cta">Cancel</button>
+        <button className="join__cta--cancel">Cancel</button>
       </Link>
     </div>
   );

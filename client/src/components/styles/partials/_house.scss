@@ -1,5 +1,5 @@
 .house {
-  background-color: $light-green;
+  background-color: $highlight;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   }
 
   &__house-name {
-    color: $btn-hover;
+    color: $primary;
   }
 
   &__icon {

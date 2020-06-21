@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/main.css";
 import { Link } from "react-router-dom";
 
-function LogIn(props) {
+function LogIn() {
   return (
     <div className="login">
       <h1 className="login__title">Welcome back!</h1>
@@ -26,7 +26,7 @@ function LogIn(props) {
         <button className="login__cta--btn">Sign In</button>
       </Link>
       <Link className="login__cta" to={`/`}>
-        <button className="login__cta--btn">Cancel</button>
+        <button className="login__cta--cancel">Cancel</button>
       </Link>
     </div>
   );
