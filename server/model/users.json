@@ -2,6 +2,7 @@
   {
     "id": "a",
     "userName": "Monica",
+    "email": "monica@gmail.com",
     "password": "1234",
     "houseName": "test-house",
     "color": "pink"
@@ -9,6 +10,7 @@
   {
     "id": "b",
     "userName": "Manuel",
+    "email": "manuel@gmail.com",
     "password": "9876",
     "houseName": "test-house",
     "color": "green"
@@ -16,6 +18,7 @@
   {
     "id": "a",
     "userName": "Tete",
+    "email": "tete@gmail.com",
     "password": "1234",
     "houseName": "sto-domingo",
     "color": "plum"
@@ -23,6 +26,7 @@
   {
     "id": "b",
     "userName": "Guante",
+    "email": "guante@gmail.com",
     "password": "9876",
     "houseName": "sto-domingo",
     "color": "blue"
@@ -30,15 +34,16 @@
   {
     "id": "c",
     "userName": "Petite",
+    "email": "petite@gmail.com",
     "password": "2468",
     "houseName": "sto-domingo",
     "color": "yellow"
   },
   {
-    "id": "8604a098-f5a9-4ba5-a5e0-170e9d5e1a6b",
+    "id": "5ccafa40-e757-4caf-a9b5-0ddb8c1c2ff1",
     "userName": "Memin",
     "password": "1234",
-    "houseName": "Papaya-house",
+    "houseName": "test-house",
     "color": "pink"
   }
 ]

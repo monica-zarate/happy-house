@@ -46,18 +46,36 @@ app.route("/users/:userName").get((req, res) => {
   res.json(getUser(userName));
 });
 app.route("/users").post((req, res) => {
+  // Create New User only if provided House Name already exists
+  let houseName = req.body.houseName;
+  let houses = getHouses();
+  let found = false;
+
+  for (i = 0; i < houses.length && found === false; i++) {
+    if (houses[i].houseName === houseName) {
+      found = true;
+    } else {
+      found = false;
+    }
+  }
+
   let newUser = {
     id: uuidv4().toString(),
     userName: req.body.userName,
+    email: req.body.email,
     password: req.body.password,
-    houseName: req.body.houseName,
+    houseName: houseName,
     color: req.body.color,
   };
   let usersData = fs.readFileSync("./model/users.json");
   let userArray = JSON.parse(usersData);
-  userArray.push(newUser);
-  fs.writeFileSync("./model/users.json", JSON.stringify(userArray));
-  res.json({ message: "Saved user" });
+  if (found === true) {
+    userArray.push(newUser);
+    fs.writeFileSync("./model/users.json", JSON.stringify(userArray));
+    res.json({ message: "Saved user" });
+  } else {
+    res.json({ message: "House Name Not Found" });
+  }
 });
 
 // App listening on local host
