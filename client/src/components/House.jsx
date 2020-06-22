@@ -6,7 +6,7 @@ import todo from "../assets/icons/hh-icon.svg";
 function House(props) {
   return (
     <>
-      <Header house={props.house} />
+      <Header house={props.house} user={props.user} />
       <div className="house">
         <h1 className="house__title">{props.house.houseName}</h1>
         <div className="house__container">
@@ -17,7 +17,9 @@ function House(props) {
           </p>
           <ul className="house__list">
             <li className="house__activity">
-              <button className="house__activity--btn">Vacuuming</button>
+              <button className="house__activity--btn">
+                {props.house.toDos[0].name}
+              </button>
             </li>
             <li className="house__activity">
               <button className="house__activity--btn"> Mopping</button>

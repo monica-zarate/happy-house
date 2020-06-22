@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import wall from "../assets/icons/wall.svg";
 import icon from "../assets/icons/hh-landing.svg";
 import menu from "../assets/icons/menu.svg";
-import user1 from "../assets/icons/user1.svg";
+import usericon from "../assets/icons/user3.svg";
 
 function Header(props) {
   // Display Menu Preview on Click event
@@ -36,8 +36,8 @@ function Header(props) {
         </button>
         <div className="menu">
           <div className="menu__wrapper">
-            <img className="menu__wrapper--icon" src={user1} alt="" />
-            <h3 className="menu__wrapper--user-name">Username</h3>
+            <img className="menu__wrapper--icon" src={usericon} alt="" />
+            <h3 className="menu__wrapper--user-name">{props.user.userName}</h3>
           </div>
           <div className="menu__options">
             <Link className="menu__options--link" to={`/profile`}>

@@ -18,10 +18,21 @@ class App extends React.Component {
       toDos: [],
       comments: [],
     },
+    user: {
+      id: "",
+      userName: "",
+      email: "",
+      password: "",
+      houseName: "",
+      color: "",
+    },
   };
 
   houseStateUpdateHandler(houseResponse) {
     this.setState({ house: houseResponse });
+  }
+  userStateUpdateHandler(userResponse) {
+    this.setState({ user: userResponse });
   }
   render() {
     return (
@@ -29,7 +40,15 @@ class App extends React.Component {
         <Switch>
           <Route path="/" component={Landing} exact />
 
-          <Route path="/login" component={LogIn} />
+          <Route
+            path="/login"
+            render={() => (
+              <LogIn
+                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
+                user={this.state.user}
+              />
+            )}
+          />
           <Route path="/join" component={Join} />
           <Route
             path="/dashboard"
@@ -37,17 +56,23 @@ class App extends React.Component {
               <Dashboard
                 updateHandler={this.houseStateUpdateHandler.bind(this)}
                 house={this.state.house}
+                houseName={this.state.user.houseName}
+                user={this.state.user}
               />
             )}
           />
           <Route path="/wall" component={Wall} />
           <Route
             path="/profile"
-            render={() => <Profile house={this.state.house} />}
+            render={() => (
+              <Profile house={this.state.house} user={this.state.user} />
+            )}
           />
           <Route
             path="/my-house"
-            render={() => <House house={this.state.house} />}
+            render={() => (
+              <House house={this.state.house} user={this.state.user} />
+            )}
           />
         </Switch>
       </div>

@@ -5,7 +5,7 @@ import Header from "./Header";
 function Wall(props) {
   return (
     <>
-      <Header />
+      <Header house={props.house} user={props.user} />
       <div className="wall">
         <div className="wall__container">Wall Component</div>
       </div>

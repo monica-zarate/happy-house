@@ -3,6 +3,7 @@ import "./styles/main.css";
 import Axios from "axios";
 import Header from "./Header";
 import Calendar from "./Calendar";
+import { Redirect } from "react-router-dom";
 
 // API
 const housesApi = "http://localhost:5000/houses/";
@@ -19,16 +20,20 @@ class Dashboard extends React.Component {
   }
 
   componentDidMount() {
-    // let houseName = this.props.match.params.houseName;
-    this.getHouse("test-house");
+    let name = this.props.houseName;
+    console.log("Bringing housename " + name);
+    this.getHouse(name);
   }
 
   componentDidUpdate() {}
 
   render() {
+    if (this.props.houseName === "") {
+      return <Redirect to="/" />;
+    }
     return (
       <>
-        <Header house={this.props.house} />
+        <Header house={this.props.house} user={this.props.user} />
         <Calendar toDos={this.props.house.toDos} />
       </>
     );
