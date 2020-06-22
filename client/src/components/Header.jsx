@@ -18,6 +18,24 @@ function Header(props) {
     }
   };
 
+  let logOut = () => {
+    props.updateHouseHandler({
+      id: "",
+      houseName: "",
+      users: [],
+      toDos: [],
+      comments: [],
+    });
+    props.userStateUpdateMethod({
+      id: "",
+      userName: "",
+      email: "",
+      password: "",
+      houseName: "",
+      color: "",
+    });
+  };
+
   return (
     <header className="header">
       <div className="header__wall">
@@ -48,7 +66,7 @@ function Header(props) {
                 {props.house.houseName}
               </button>
             </Link>
-            <Link className="menu__options--link" to={`/`}>
+            <Link className="menu__options--link" to={`/`} onClick={logOut}>
               <button className="menu__options--btn">Log Out</button>
             </Link>
           </div>

@@ -6,7 +6,12 @@ import todo from "../assets/icons/hh-icon.svg";
 function House(props) {
   return (
     <>
-      <Header house={props.house} user={props.user} />
+      <Header
+        house={props.house}
+        user={props.user}
+        updateHouseHandler={props.updateHandler}
+        userStateUpdateMethod={props.userStateUpdateMethod}
+      />
       <div className="house">
         <h1 className="house__title">{props.house.houseName}</h1>
         <div className="house__container">

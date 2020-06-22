@@ -47,7 +47,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .landing__title {
@@ -111,7 +111,7 @@ body {
 }
 
 .join {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

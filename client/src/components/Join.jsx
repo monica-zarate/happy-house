@@ -63,7 +63,7 @@ function Join() {
           />
           <input
             className="join__input"
-            type="text"
+            type="password"
             name="password"
             id="password"
             placeholder="Password"
@@ -74,13 +74,6 @@ function Join() {
             <option value="2">Green</option>
             <option value="3">Coral</option>
             <option value="4">Lilac</option>
-          </select>
-          <select className="join__input" name="icon" id="icon">
-            <option value="0">Select your Avatar:</option>
-            <option value="1">user1</option>
-            <option value="2">user2</option>
-            <option value="3">user3</option>
-            <option value="4">user4</option>
           </select>
         </form>
         <Link className="join__btn-link" to={`/dashboard`}>
@@ -135,13 +128,6 @@ function Join() {
             <option value="2">Green</option>
             <option value="3">Coral</option>
             <option value="4">Lilac</option>
-          </select>
-          <select className="join__input" name="icon" id="icon">
-            <option value="0">Select your Avatar:</option>
-            <option value="1">user1</option>
-            <option value="2">user2</option>
-            <option value="3">user3</option>
-            <option value="4">user4</option>
           </select>
         </form>
         <Link className="join__btn-link" to={`/dashboard`}>

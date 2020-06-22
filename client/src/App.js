@@ -55,23 +55,44 @@ class App extends React.Component {
             render={() => (
               <Dashboard
                 updateHandler={this.houseStateUpdateHandler.bind(this)}
+                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
                 house={this.state.house}
                 houseName={this.state.user.houseName}
                 user={this.state.user}
               />
             )}
           />
-          <Route path="/wall" component={Wall} />
+          <Route
+            path="/wall"
+            render={() => (
+              <Wall
+                house={this.state.house}
+                user={this.state.user}
+                updateHandler={this.houseStateUpdateHandler.bind(this)}
+                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
+              />
+            )}
+          />
           <Route
             path="/profile"
             render={() => (
-              <Profile house={this.state.house} user={this.state.user} />
+              <Profile
+                house={this.state.house}
+                user={this.state.user}
+                updateHandler={this.houseStateUpdateHandler.bind(this)}
+                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
+              />
             )}
           />
           <Route
             path="/my-house"
             render={() => (
-              <House house={this.state.house} user={this.state.user} />
+              <House
+                house={this.state.house}
+                user={this.state.user}
+                updateHandler={this.houseStateUpdateHandler.bind(this)}
+                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
+              />
             )}
           />
         </Switch>

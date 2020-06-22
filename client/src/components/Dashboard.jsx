@@ -33,7 +33,12 @@ class Dashboard extends React.Component {
     }
     return (
       <>
-        <Header house={this.props.house} user={this.props.user} />
+        <Header
+          house={this.props.house}
+          user={this.props.user}
+          updateHouseHandler={this.props.updateHandler}
+          userStateUpdateMethod={this.props.userStateUpdateMethod}
+        />
         <Calendar toDos={this.props.house.toDos} />
       </>
     );
