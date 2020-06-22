@@ -23,12 +23,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid $highlight;
+    border: 1px solid $primary;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     font-family: $bold;
     color: $highlight;
+    box-shadow: 0 5px 5px 0 $background-primary;
 
     &--dotw {
       font-size: 0.5rem;
@@ -53,6 +54,7 @@
       background-color: $primary;
       color: $background-primary;
       margin: 0 0 0.5rem 0;
+      box-shadow: 0 5px 5px 0 $background-primary;
     }
   }
 }

@@ -47,11 +47,8 @@
     border: 2px solid $primary;
     background-color: $primary;
     color: $white;
+    box-shadow: 0 5px 5px 0 $background-primary;
 
-    &:focus {
-      border: 2px solid $highlight;
-      background-color: $highlight;
-    }
     &:hover {
       border: 2px solid $highlight;
       background-color: $highlight;

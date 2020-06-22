@@ -3,7 +3,8 @@
 .header {
   margin: 0.5rem;
   display: flex;
-  border-bottom: 1.5px solid $primary;
+  box-shadow: 0 5px 5px 0 $background-primary;
+  border-radius: 4px;
   justify-content: space-between;
   width: 19rem;
   height: 3rem;
