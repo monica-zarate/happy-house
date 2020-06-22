@@ -12,22 +12,17 @@ class LogIn extends React.Component {
     let userName = document.getElementById("username");
     let password = document.getElementById("password");
     event.preventDefault();
-    Axios.get(`${usersApi}${userName.value}`)
-      .then((response) => {
-        // If User Name Exists
-        if (response.data.password === password.value) {
-          console.log("Correct user");
-          this.props.userStateUpdateMethod(response.data);
-        } else {
-          console.log("Incorrect user");
-
-          alert("Incorrect User Name or Password, please try again");
-        }
-      })
-      .catch((error) => {
+    Axios.get(`${usersApi}${userName.value}`).then((response) => {
+      // If User Name exists set State
+      if (response.data.password === password.value) {
+        console.log("Correct user");
+        this.props.userStateUpdateMethod(response.data);
+      } else {
         // If User Name does not exists
-        console.log(error);
-      });
+        console.log("Incorrect user");
+        alert("Incorrect User Name or Password, please try again.");
+      }
+    });
   };
   render() {
     if (this.props.user.houseName !== "") {

@@ -7,6 +7,7 @@ import Join from "./components/Join";
 import Dashboard from "./components/Dashboard";
 
 class App extends React.Component {
+  // Set blank state
   state = {
     user: {
       id: "",
@@ -17,6 +18,8 @@ class App extends React.Component {
       color: "",
     },
   };
+
+  // Set State Handler to use as Props for LogIn and Dashboard Components
   userStateUpdateHandler(userResponse) {
     this.setState({ user: userResponse });
   }
@@ -25,7 +28,6 @@ class App extends React.Component {
       <div className="App">
         <Switch>
           <Route path="/" component={Landing} exact />
-
           <Route
             path="/login"
             render={() => (

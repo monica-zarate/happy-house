@@ -3,7 +3,7 @@ import "./styles/main.css";
 import { Link } from "react-router-dom";
 
 function Join() {
-  // Display elements onClick event
+  // Remove Create a new Happy House and Join a Happy House Buttons once one of them gets clicked
   let removeBtns = () => {
     let createNew = document.getElementsByClassName("join__cta")[0];
     createNew.style.display = "none";
@@ -11,13 +11,14 @@ function Join() {
     joinHouse.style.display = "none";
   };
 
-  let createNew = (event) => {
+  // Display forms onClick
+  let createNew = () => {
     let joinComponent = document.getElementsByClassName("join__container")[0];
     joinComponent.style.display = "flex";
     removeBtns();
   };
 
-  let joinHouse = (event) => {
+  let joinHouse = () => {
     let joinComponent = document.getElementsByClassName("join__container")[1];
     joinComponent.style.height = "50%";
     joinComponent.style.display = "flex";
@@ -117,7 +118,7 @@ function Join() {
           />
           <input
             className="join__input"
-            type="text"
+            type="password"
             name="password"
             id="password"
             placeholder="Password"
