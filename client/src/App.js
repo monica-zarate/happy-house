@@ -5,19 +5,9 @@ import Landing from "./components/Landing";
 import LogIn from "./components/LogIn";
 import Join from "./components/Join";
 import Dashboard from "./components/Dashboard";
-import Wall from "./components/Wall";
-import Profile from "./components/Profile";
-import House from "./components/House";
 
 class App extends React.Component {
   state = {
-    house: {
-      id: "",
-      houseName: "",
-      users: [],
-      toDos: [],
-      comments: [],
-    },
     user: {
       id: "",
       userName: "",
@@ -27,10 +17,6 @@ class App extends React.Component {
       color: "",
     },
   };
-
-  houseStateUpdateHandler(houseResponse) {
-    this.setState({ house: houseResponse });
-  }
   userStateUpdateHandler(userResponse) {
     this.setState({ user: userResponse });
   }
@@ -52,46 +38,10 @@ class App extends React.Component {
           <Route path="/join" component={Join} />
           <Route
             path="/dashboard"
-            render={() => (
+            render={({ match }) => (
               <Dashboard
-                updateHandler={this.houseStateUpdateHandler.bind(this)}
                 userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
-                house={this.state.house}
-                houseName={this.state.user.houseName}
                 user={this.state.user}
-              />
-            )}
-          />
-          <Route
-            path="/wall"
-            render={() => (
-              <Wall
-                house={this.state.house}
-                user={this.state.user}
-                updateHandler={this.houseStateUpdateHandler.bind(this)}
-                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
-              />
-            )}
-          />
-          <Route
-            path="/profile"
-            render={() => (
-              <Profile
-                house={this.state.house}
-                user={this.state.user}
-                updateHandler={this.houseStateUpdateHandler.bind(this)}
-                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
-              />
-            )}
-          />
-          <Route
-            path="/my-house"
-            render={() => (
-              <House
-                house={this.state.house}
-                user={this.state.user}
-                updateHandler={this.houseStateUpdateHandler.bind(this)}
-                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
               />
             )}
           />

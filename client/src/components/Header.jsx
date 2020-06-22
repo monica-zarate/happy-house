@@ -39,7 +39,7 @@ function Header(props) {
   return (
     <header className="header">
       <div className="header__wall">
-        <Link className="header__wall--link" to={`/wall`}>
+        <Link className="header__wall--link" to={`/dashboard/wall`}>
           <img className="header__wall--icon" src={wall} alt="" />
         </Link>
       </div>
@@ -58,10 +58,10 @@ function Header(props) {
             <h3 className="menu__wrapper--user-name">{props.user.userName}</h3>
           </div>
           <div className="menu__options">
-            <Link className="menu__options--link" to={`/profile`}>
+            <Link className="menu__options--link" to={`/dashboard/profile`}>
               <button className="menu__options--btn">My Profile</button>
             </Link>
-            <Link className="menu__options--link" to={`/my-house`}>
+            <Link className="menu__options--link" to={`/dashboard/my-house`}>
               <button className="menu__options--btn">
                 {props.house.houseName}
               </button>

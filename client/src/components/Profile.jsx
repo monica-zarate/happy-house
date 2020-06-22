@@ -1,17 +1,10 @@
 import React from "react";
 import "./styles/main.css";
 import usericon from "../assets/icons/user3.svg";
-import Header from "./Header";
 
 function Profile(props) {
   return (
     <>
-      <Header
-        house={props.house}
-        user={props.user}
-        updateHouseHandler={props.updateHandler}
-        userStateUpdateMethod={props.userStateUpdateMethod}
-      />
       <div className="profile">
         <div className="profile__info">
           <img className="profile__info--user-icon" src={usericon} alt="" />
