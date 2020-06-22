@@ -26,23 +26,17 @@ function Profile(props) {
           <input
             className="update__input"
             type="text"
-            placeholder="Current Password"
+            placeholder="Enter a New Password"
           />
 
           <button className="update__btn">Update Password</button>
-          <input
-            className="update__input"
-            type="text"
-            placeholder="Current User Icon"
-          />
-
-          <button className="update__btn">Update Icon</button>
-          <input
-            className="update__input"
-            type="text"
-            placeholder={props.user.color}
-          />
-
+          <select className="update__input" name="color" id="color">
+            <option value="0">Select a Color:</option>
+            <option value="1">Yellow</option>
+            <option value="2">Green</option>
+            <option value="3">Coral</option>
+            <option value="4">Lilac</option>
+          </select>
           <button className="update__btn">Update Color</button>
         </form>
       </div>

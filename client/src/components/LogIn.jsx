@@ -3,7 +3,7 @@ import "./styles/main.css";
 import Axios from "axios";
 import { Link, Redirect } from "react-router-dom";
 
-// API
+// Users API
 const usersApi = "http://localhost:5000/users/";
 
 class LogIn extends React.Component {

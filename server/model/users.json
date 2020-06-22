@@ -1,49 +1,49 @@
 [
   {
-    "id": "a",
+    "id": "1",
     "userName": "Monica",
     "email": "monica@gmail.com",
     "password": "1234",
-    "houseName": "test-house",
-    "color": "pink"
+    "houseName": "Oportos",
+    "color": "coral"
   },
   {
-    "id": "b",
+    "id": "2",
     "userName": "Manuel",
     "email": "manuel@gmail.com",
     "password": "9876",
-    "houseName": "test-house",
+    "houseName": "Oportos",
     "color": "green"
   },
   {
-    "id": "a",
+    "id": "3",
     "userName": "Tete",
     "email": "tete@gmail.com",
     "password": "1234",
-    "houseName": "sto-domingo",
-    "color": "plum"
+    "houseName": "Coyoacan",
+    "color": "lilac"
   },
   {
-    "id": "b",
+    "id": "4",
     "userName": "Guante",
     "email": "guante@gmail.com",
     "password": "9876",
-    "houseName": "sto-domingo",
-    "color": "blue"
+    "houseName": "Coyoacan",
+    "color": "yellow"
   },
   {
-    "id": "c",
+    "id": "5",
     "userName": "Petite",
     "email": "petite@gmail.com",
     "password": "2468",
-    "houseName": "sto-domingo",
-    "color": "yellow"
+    "houseName": "Coyoacan",
+    "color": "green"
   },
   {
     "id": "5ccafa40-e757-4caf-a9b5-0ddb8c1c2ff1",
     "userName": "Memin",
     "password": "1234",
-    "houseName": "test-house",
-    "color": "pink"
+    "houseName": "Oportos",
+    "color": "lilac"
   }
 ]

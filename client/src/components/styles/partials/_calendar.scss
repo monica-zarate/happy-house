@@ -9,7 +9,7 @@
   &__description {
     margin: 0 auto 1rem auto;
     color: $highlight;
-    font-family: $medium;
+    font-family: $bold;
   }
 
   &__activity-wrapper {
@@ -23,12 +23,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // margin: 0 0 1rem 0;
     border: 1px solid $highlight;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    font-family: $medium;
+    font-family: $bold;
     color: $highlight;
 
     &--dotw {

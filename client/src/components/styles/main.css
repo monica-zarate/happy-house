@@ -15,7 +15,6 @@ html,
 body {
   font-family: "Roboto Regular";
   font-size: 16px;
-  background-color: #edeff5;
 }
 
 .container {
@@ -97,7 +96,7 @@ body {
   outline: none;
   border: 2px solid #274c77;
   background-color: #274c77;
-  color: #fafafa;
+  color: #ffffff;
 }
 
 .landing__btn:focus {
@@ -135,7 +134,7 @@ body {
   outline: none;
   border: 2px solid #274c77;
   background-color: #274c77;
-  color: #fafafa;
+  color: #ffffff;
   margin: 0 0 2rem 0;
 }
 
@@ -151,8 +150,8 @@ body {
   border-radius: 4px;
   border-style: none;
   outline: none;
-  border: 2px solid #edeff5;
-  background-color: #edeff5;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
   color: #95469b;
   margin: 0 0 2rem 0;
 }
@@ -215,7 +214,6 @@ body {
 }
 
 .login {
-  background-color: #edeff5;
   padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,7 +268,7 @@ body {
   outline: none;
   border: 2px solid #274c77;
   background-color: #274c77;
-  color: #fafafa;
+  color: #ffffff;
   margin: 0 0 1rem 0;
 }
 
@@ -286,24 +284,23 @@ body {
   border-radius: 4px;
   border-style: none;
   outline: none;
-  border: 2px solid #edeff5;
-  background-color: #edeff5;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
   color: #95469b;
   margin: 0 0 2rem 0;
 }
 
 .header {
-  padding: 0.5rem;
+  margin: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 2px solid #95469b;
+  border-bottom: 1.5px solid #274c77;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 20rem;
-  background-color: #fafafa;
-  height: 3.5rem;
+  width: 19rem;
+  height: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -344,7 +341,7 @@ body {
   height: 1.5rem;
   border-style: none;
   outline: none;
-  background-color: #fafafa;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -357,7 +354,7 @@ body {
   display: none;
   padding: 1rem 1rem;
   position: fixed;
-  right: 0;
+  right: 0.5rem;
   top: 3.5rem;
   background-color: #274c77;
   height: 100vh;
@@ -411,19 +408,19 @@ body {
   cursor: pointer;
   border-style: none;
   outline: none;
-  border-bottom: 2px solid #fafafa;
+  border-bottom: 2px solid #ffffff;
   background-color: #274c77;
-  color: #fafafa;
+  color: #ffffff;
   font-size: 0.75rem;
 }
 
 .menu__options--btn:hover {
-  background-color: #fafafa;
+  background-color: #ffffff;
   color: #274c77;
 }
 
 .dashboard {
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 
 .calendar {
@@ -435,13 +432,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 
 .calendar__description {
   margin: 0 auto 1rem auto;
   color: #95469b;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Bold";
 }
 
 .calendar__activity-wrapper {
@@ -475,7 +472,7 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Bold";
   color: #95469b;
 }
 
@@ -510,7 +507,7 @@ body {
 }
 
 .profile {
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,7 +580,7 @@ body {
   outline: none;
   border: 2px solid #274c77;
   background-color: #274c77;
-  color: #fafafa;
+  color: #ffffff;
 }
 
 .update__btn:hover {
@@ -592,7 +589,7 @@ body {
 }
 
 .house {
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -679,7 +676,7 @@ body {
   outline: none;
   border: 2px solid #95469b;
   background-color: #95469b;
-  color: #fafafa;
+  color: #ffffff;
   margin: 0 0 1rem 0;
 }
 

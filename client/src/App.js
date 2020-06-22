@@ -7,7 +7,7 @@ import Join from "./components/Join";
 import Dashboard from "./components/Dashboard";
 
 class App extends React.Component {
-  // Set blank state
+  // Set blank state for User
   state = {
     user: {
       id: "",

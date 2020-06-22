@@ -1,18 +1,18 @@
 import React from "react";
 import "./styles/main.css";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Axios from "axios";
 import Header from "./Header";
 import Calendar from "./Calendar";
-import { Redirect } from "react-router-dom";
 import Wall from "./Wall";
 import Profile from "./Profile";
 import House from "./House";
-import { Route, Switch } from "react-router-dom";
 
-// API
+// Houses API
 const housesApi = "http://localhost:5000/houses/";
 
 class Dashboard extends React.Component {
+  // Set blank state for House
   state = {
     house: {
       id: "",
@@ -22,7 +22,7 @@ class Dashboard extends React.Component {
       comments: [],
     },
   };
-  //   API call to retrieve Houses Data then assigning data to State.
+  //   API call to retrieve House Data then assigning Data to House State.
   getHouse(houseName) {
     Axios.get(`${housesApi}${houseName}`)
       .then((response) => {
@@ -32,19 +32,18 @@ class Dashboard extends React.Component {
       .catch((error) => console.log(error));
   }
 
-  componentDidMount() {
-    let name = this.props.user.houseName;
-    console.log("Bringing housename " + name);
-    this.getHouse(name);
-  }
-
   updateHouseHandler(houseResponse) {
     this.setState({ house: houseResponse });
   }
 
-  componentDidUpdate() {}
+  componentDidMount() {
+    let name = this.props.user.houseName;
+    console.log("Bringing Happy House: " + name);
+    this.getHouse(name);
+  }
 
   render() {
+    // Redirect to Landing Component if houseName is empty, to ensure only logged in users can navigate the site's Routes
     if (this.props.houseName === "") {
       return <Redirect to="/" />;
     }
@@ -52,8 +51,8 @@ class Dashboard extends React.Component {
       <>
         <Header
           house={this.state.house}
-          user={this.props.user}
           updateHouseHandler={this.updateHouseHandler.bind(this)}
+          user={this.props.user}
           userStateUpdateMethod={this.props.userStateUpdateMethod}
         />
         <Switch>

@@ -1,42 +1,58 @@
 [
   {
     "id": "1",
-    "houseName": "test-house",
+    "houseName": "Oportos",
     "toDos": [
       {
         "id": "i",
-        "name": "vacuuming",
-        "date": "Jun 15th",
-        "length": "30 minutes"
+        "name": "vacuuming"
       },
       {
         "id": "ii",
-        "name": "laundry",
-        "date": "Jun 15th",
-        "length": "30 minutes"
+        "name": "do the laundry"
       },
       {
         "id": "iii",
-        "name": "take out the trash",
-        "date": "Jun 15th",
-        "length": "30 minutes"
+        "name": "take out the trash"
       },
       {
         "id": "iv",
-        "name": "meal prep",
-        "date": "Jun 15th",
-        "length": "30 minutes"
+        "name": "meal prep"
+      },
+      {
+        "id": "v",
+        "name": "mopping"
+      },
+      {
+        "id": "vi",
+        "name": "grocery shopping"
+      },
+      {
+        "id": "vii",
+        "name": "clean the bathroom"
+      },
+      {
+        "id": "viii",
+        "name": "water plants"
+      },
+      {
+        "id": "ix",
+        "name": "grocery shopping"
+      },
+      {
+        "id": "x",
+        "name": "dusting"
       }
     ],
     "comments": [
       {
-        "id": "a1",
+        "id": "a",
         "userName": "Monica",
         "comment": "I will go grocery shopping after work today",
         "timestamp": "June 15th 2020"
       },
       {
-        "id": "a2",
+        "id": "b",
         "userName": "Manuel",
         "comment": "I finished the milk in the morning!",
         "timestamp": "June 9th 2020"
@@ -45,54 +61,64 @@
   },
   {
     "id": "2",
-    "houseName": "sto-domingo",
+    "houseName": "Coyoacan",
     "toDos": [
       {
         "id": "i",
-        "name": "vacuuming",
-        "date": "Jun 15th",
-        "length": "30 minutes"
+        "name": "vacuuming"
       },
       {
         "id": "ii",
-        "name": "laundry",
-        "date": "Jun 15th",
-        "length": "30 minutes"
+        "name": "do the laundry"
       },
       {
         "id": "iii",
-        "name": "take out the trash",
-        "date": "Jun 15th",
-        "length": "30 minutes"
+        "name": "take out the trash"
       },
       {
         "id": "iv",
-        "name": "meal prep",
-        "date": "Jun 15th",
-        "length": "60 minutes"
+        "name": "meal prep"
       },
       {
         "id": "v",
-        "name": "feed the cat",
-        "date": "Jun 15th",
-        "length": "10 minutes"
+        "name": "mopping"
+      },
+      {
+        "id": "vi",
+        "name": "grocery shopping"
+      },
+      {
+        "id": "vii",
+        "name": "clean the bathroom"
+      },
+      {
+        "id": "viii",
+        "name": "water plants"
+      },
+      {
+        "id": "ix",
+        "name": "grocery shopping"
+      },
+      {
+        "id": "x",
+        "name": "dusting"
       }
     ],
     "comments": [
       {
-        "id": "a1",
+        "id": "a",
         "userName": "Tete",
         "comment": "Any requests for the Farmer's Market? I'm going on Sunday",
         "timestamp": "June 10th 2020"
       },
       {
-        "id": "a2",
+        "id": "b",
         "userName": "Guante",
         "comment": "Who's ready for Taco Tuesday?",
         "timestamp": "June 16th 2020"
       },
       {
-        "id": "a3",
+        "id": "c",
         "userName": "Petite",
         "comment": "I'm doing the dishes after school today!",
         "timestamp": "June 9th 2020"
@@ -101,7 +127,7 @@
   },
   {
     "id": "f8cf2591-949a-4afb-bd35-48b53158fa51",
-    "houseName": "jicama",
+    "houseName": "Jicama",
     "toDos": [],
     "comments": []
   }
