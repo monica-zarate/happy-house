@@ -5,8 +5,37 @@ function Calendar(props) {
   return (
     <main className="calendar">
       <p className="calendar__description">Happening This Week</p>
+      <div className="calendar__activity-wrapper">
+        <div className="calendar__date">
+          <p className="calendar__date--dotw">MON</p>
+          <p className="calendar__date--day">22</p>
+        </div>
+        <div className="calendar__doing">
+          {props.toDos.monday.map((activity) => (
+            <>
+              <p className="calendar__doing--description">{activity.name}</p>
+              <p className="calendar__doing--description">{activity.user}</p>
+            </>
+          ))}
+        </div>
+      </div>
 
       <div className="calendar__activity-wrapper">
+        <div className="calendar__date">
+          <p className="calendar__date--dotw">TUE</p>
+          <p className="calendar__date--day">23</p>
+        </div>
+        <div className="calendar__doing">
+          {props.toDos.tuesday.map((activity) => (
+            <>
+              <p className="calendar__doing--description">{activity.name}</p>
+              <p className="calendar__doing--description">{activity.user}</p>
+            </>
+          ))}
+        </div>
+      </div>
+
+      {/* <div className="calendar__activity-wrapper">
         <div className="calendar__date">
           <p className="calendar__date--dotw">MON</p>
           <p className="calendar__date--day">22</p>
@@ -69,7 +98,7 @@ function Calendar(props) {
         <div className="calendar__doing">
           <p className="calendar__doing--description"></p>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }

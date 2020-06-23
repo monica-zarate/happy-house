@@ -33,6 +33,7 @@ app
       id: uuidv4(),
       houseName: req.body.houseName,
       toDos: [],
+      toDosPerDay: [],
       comments: [],
     };
     housesArray.push(houseObject);

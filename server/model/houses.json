@@ -2,6 +2,29 @@
   {
     "id": "1",
     "houseName": "Oportos",
+    "toDosPerDay": {
+      "monday": [
+        {
+          "name": "vacuuming",
+          "user": "Manuel"
+        },
+        {
+          "name": "take out the trash",
+          "user": "Manuel"
+        }
+      ],
+      "tuesday": [
+        {
+          "name": "do the laundry",
+          "user": "Monica"
+        }
+      ],
+      "wednesday": [],
+      "thursday": [],
+      "friday": [],
+      "saturday": [],
+      "sunday": []
+    },
     "toDos": [
       {
         "id": "i",

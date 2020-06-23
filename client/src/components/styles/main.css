@@ -696,6 +696,87 @@ body {
   background-color: #274c77;
 }
 
+.house__pop-up {
+  padding: 1rem;
+  width: 12rem;
+  height: 13.5rem;
+  background-color: #274c77;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 4rem;
+  top: 8rem;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 5px 5px 0 #edeff5;
+          box-shadow: 0 5px 5px 0 #edeff5;
+}
+
+.house__pop-up--title {
+  font-family: "Roboto Medium";
+  font-size: 0.75rem;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.house__pop-up--select {
+  padding: 0.5rem;
+  width: 8rem;
+  font-size: 0.6rem;
+  margin: 0 0 1rem 0;
+  outline: none;
+}
+
+.house__pop-up--btn {
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  font-family: "Roboto Medium";
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  background-color: #ef8354;
+  border: 2px solid #ef8354;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  -webkit-box-shadow: 0 5px 5px 0 #274c77;
+          box-shadow: 0 5px 5px 0 #274c77;
+  font-size: 0.7rem;
+}
+
+.house__pop-up--btn:hover {
+  background-color: #ffffff;
+  color: #ef8354;
+  border: 2px solid #ffffff;
+}
+
+.house__pop-up--cancel {
+  width: 8rem;
+  font-family: "Roboto Medium";
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  border: 2px solid #274c77;
+  background-color: #274c77;
+  color: #ef8354;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+}
+
+.house__pop-up--cancel:hover {
+  color: #ffffff;
+}
+
 @font-face {
   font-family: "Roboto Regular";
   src: url("../../assets/fonts/roboto-regular.ttf");

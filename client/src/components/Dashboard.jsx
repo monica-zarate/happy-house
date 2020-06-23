@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/main.css";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Axios from "axios";
 import Header from "./Header";
 import Calendar from "./Calendar";
@@ -19,17 +19,28 @@ class Dashboard extends React.Component {
       houseName: "",
       users: [],
       toDos: [],
+      toDosPerDay: {
+        monday: [],
+        tuesday: [],
+        wednesday: [],
+        thursday: [],
+        friday: [],
+        saturday: [],
+        sunday: [],
+      },
       comments: [],
     },
   };
   //   API call to retrieve House Data then assigning Data to House State.
   getHouse(houseName) {
-    Axios.get(`${housesApi}${houseName}`)
-      .then((response) => {
-        this.updateHouseHandler(response.data);
-        console.log(this.props);
-      })
-      .catch((error) => console.log(error));
+    if (houseName !== "") {
+      Axios.get(`${housesApi}${houseName}`)
+        .then((response) => {
+          this.updateHouseHandler(response.data);
+          console.log(this.props);
+        })
+        .catch((error) => console.log(error));
+    }
   }
 
   updateHouseHandler(houseResponse) {
@@ -43,10 +54,6 @@ class Dashboard extends React.Component {
   }
 
   render() {
-    // Redirect to Landing Component if houseName is empty, to ensure only logged in users can navigate the site's Routes
-    if (this.props.houseName === "") {
-      return <Redirect to="/" />;
-    }
     return (
       <>
         <Header
@@ -58,8 +65,8 @@ class Dashboard extends React.Component {
         <Switch>
           <Route
             exact
-            path="/dashboard/"
-            render={() => <Calendar toDos={this.state.house.toDos} />}
+            path="/dashboard"
+            render={() => <Calendar toDos={this.state.house.toDosPerDay} />}
           />
           <Route
             path="/dashboard/profile"

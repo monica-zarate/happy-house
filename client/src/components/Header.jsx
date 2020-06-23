@@ -18,6 +18,7 @@ function Header(props) {
     }
   };
 
+  // Log Out Method to set a blank State
   let logOut = () => {
     props.updateHouseHandler({
       id: "",
