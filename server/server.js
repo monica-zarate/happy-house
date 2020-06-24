@@ -16,10 +16,29 @@ app.use(express.json());
 app.use(cors());
 
 // Get House per Name
-app.route("/houses/:houseName").get((req, res) => {
-  let houseName = req.params.houseName;
-  res.json(getHouse(houseName));
-});
+app
+  .route("/houses/:houseName")
+  .get((req, res) => {
+    let houseName = req.params.houseName;
+    res.json(getHouse(houseName));
+  })
+  .post((req, res) => {
+    let houseName = req.params.houseName;
+    let houses = getHouses();
+    let newId = uuidv4();
+    let toDoName = req.body.name;
+    let toDoUser = req.body.user;
+    let day = req.body.day;
+    let myHouse = houses.filter((house) => house.houseName == houseName)[0];
+    let newToDo = {
+      toDoId: newId,
+      name: toDoName,
+      user: toDoUser,
+    };
+    myHouse.toDosPerDay[day].push(newToDo);
+    fs.writeFileSync("./model/houses.json", JSON.stringify(houses));
+    res.json(myHouse);
+  });
 
 // Get/Post House
 app

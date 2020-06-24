@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/main.css";
+import Axios from "axios";
 import todo from "../assets/icons/hh-icon.svg";
 
 function House(props) {
@@ -18,9 +19,24 @@ function House(props) {
   };
 
   let selectActivity = (event) => {
+    event.preventDefault();
+    console.log(event.target.color.value);
     let day = document.getElementsByClassName("house__pop-up--select")[0].value;
     let activity = document.getElementById("selectedActivity").innerHTML;
-    props.house.toDosPerDay.tuesday = activity;
+
+    let newActivityPerDay = {
+      toDosPerDay: {
+        day: event.target.color.value,
+      },
+    };
+    Axios.post("/houses", newActivityPerDay)
+      .then((response) => {
+        console.log("New activity added");
+        this.popUp();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -38,22 +54,24 @@ function House(props) {
               When can you
               <span id="selectedActivity"></span>?
             </h3>
-            <select className="house__pop-up--select" name="color" id="color">
-              <option value="0">Select a Day:</option>
-              <option value="1">Monday</option>
-              <option value="2">Tuesday</option>
-              <option value="3">Wednesday</option>
-              <option value="4">Thursday</option>
-              <option value="5">Friday</option>
-              <option value="6">Saturday</option>
-              <option value="7">Sunday</option>
-            </select>
-            <button className="house__pop-up--btn" onClick={selectActivity}>
-              Schedule
-            </button>
-            <button className="house__pop-up--cancel" onClick={popUp}>
-              Cancel
-            </button>
+            <form action="" onSubmit={selectActivity}>
+              <select className="house__pop-up--select" name="color" id="color">
+                <option value="0">Select a Day:</option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+                <option value="7">Sunday</option>
+              </select>
+              <button type="submit" className="house__pop-up--btn">
+                Schedule
+              </button>
+              <button className="house__pop-up--cancel" onClick={popUp}>
+                Cancel
+              </button>
+            </form>
           </div>
           <ul className="house__list">
             {props.house.toDos.map((activity) => (

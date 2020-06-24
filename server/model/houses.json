@@ -4,68 +4,40 @@
     "houseName": "Oportos",
     "toDosPerDay": {
       "monday": [
-        {
-          "name": "vacuuming",
-          "user": "Manuel"
-        },
-        {
-          "name": "take out the trash",
-          "user": "Manuel"
-        }
+        { "id": "1", "name": "vacuuming", "user": "Manuel" },
+        { "id": "2", "name": "take out the trash", "user": "Manuel" }
       ],
       "tuesday": [
+        { "toDoId": "3", "name": "do the laundry", "user": "Monica" }
+      ],
+      "wednesday": [
         {
-          "name": "do the laundry",
-          "user": "Monica"
+          "toDoId": "88284fb2-e18c-4e53-aabc-ce27c095909a",
+          "name": "trapiar",
+          "user": "barrer"
+        },
+        {
+          "toDoId": "e452620f-28ac-44dc-809a-7a2f5909bd76",
+          "name": "trapiar",
+          "user": "ponin loco"
         }
       ],
-      "wednesday": [],
       "thursday": [],
       "friday": [],
       "saturday": [],
       "sunday": []
     },
     "toDos": [
-      {
-        "id": "i",
-        "name": "vacuuming"
-      },
-      {
-        "id": "ii",
-        "name": "do the laundry"
-      },
-      {
-        "id": "iii",
-        "name": "take out the trash"
-      },
-      {
-        "id": "iv",
-        "name": "meal prep"
-      },
-      {
-        "id": "v",
-        "name": "mopping"
-      },
-      {
-        "id": "vi",
-        "name": "grocery shopping"
-      },
-      {
-        "id": "vii",
-        "name": "clean the bathroom"
-      },
-      {
-        "id": "viii",
-        "name": "water plants"
-      },
-      {
-        "id": "ix",
-        "name": "grocery shopping"
-      },
-      {
-        "id": "x",
-        "name": "dusting"
-      }
+      { "id": "i", "name": "vacuuming" },
+      { "id": "ii", "name": "do the laundry" },
+      { "id": "iii", "name": "take out the trash" },
+      { "id": "iv", "name": "meal prep" },
+      { "id": "v", "name": "mopping" },
+      { "id": "vi", "name": "grocery shopping" },
+      { "id": "vii", "name": "clean the bathroom" },
+      { "id": "viii", "name": "water plants" },
+      { "id": "ix", "name": "grocery shopping" },
+      { "id": "x", "name": "dusting" }
     ],
     "comments": [
       {
@@ -86,46 +58,16 @@
     "id": "2",
     "houseName": "Coyoacan",
     "toDos": [
-      {
-        "id": "i",
-        "name": "vacuuming"
-      },
-      {
-        "id": "ii",
-        "name": "do the laundry"
-      },
-      {
-        "id": "iii",
-        "name": "take out the trash"
-      },
-      {
-        "id": "iv",
-        "name": "meal prep"
-      },
-      {
-        "id": "v",
-        "name": "mopping"
-      },
-      {
-        "id": "vi",
-        "name": "grocery shopping"
-      },
-      {
-        "id": "vii",
-        "name": "clean the bathroom"
-      },
-      {
-        "id": "viii",
-        "name": "water plants"
-      },
-      {
-        "id": "ix",
-        "name": "grocery shopping"
-      },
-      {
-        "id": "x",
-        "name": "dusting"
-      }
+      { "id": "i", "name": "vacuuming" },
+      { "id": "ii", "name": "do the laundry" },
+      { "id": "iii", "name": "take out the trash" },
+      { "id": "iv", "name": "meal prep" },
+      { "id": "v", "name": "mopping" },
+      { "id": "vi", "name": "grocery shopping" },
+      { "id": "vii", "name": "clean the bathroom" },
+      { "id": "viii", "name": "water plants" },
+      { "id": "ix", "name": "grocery shopping" },
+      { "id": "x", "name": "dusting" }
     ],
     "comments": [
       {
@@ -152,6 +94,24 @@
     "id": "f8cf2591-949a-4afb-bd35-48b53158fa51",
     "houseName": "Jicama",
     "toDos": [],
+    "comments": []
+  },
+  {
+    "id": "adc663ce-f577-4ed9-bfb5-20e69a6935ca",
+    "toDos": [],
+    "toDosPerDay": [],
+    "comments": []
+  },
+  {
+    "id": "0d25c311-7e86-40d5-86cd-aa2e2ffbcd37",
+    "toDos": [],
+    "toDosPerDay": [],
+    "comments": []
+  },
+  {
+    "id": "02574fa1-5e0b-4a5a-8310-f090eba7e9ae",
+    "toDos": [],
+    "toDosPerDay": [],
     "comments": []
   }
 ]
