@@ -71,7 +71,7 @@ function House(props) {
           </p>
           <div className="house__pop-up">
             <h3 className="house__pop-up--title">
-              When can you &nbsp
+              When can you &nbsp;
               <span
                 className="house__pop-up--selected-activity"
                 id="selectedActivity"
@@ -83,7 +83,7 @@ function House(props) {
               onSubmit={selectActivity}
               className="house__pop-up--select"
             >
-              <select name="day" id="day">
+              <select className="house__pop-up--options" name="day" id="day">
                 <option value="0">Select a Day:</option>
                 <option value="monday">Monday</option>
                 <option value="tuesday">Tuesday</option>

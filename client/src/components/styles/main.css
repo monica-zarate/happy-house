@@ -503,7 +503,6 @@ body {
 
 .calendar__doing--description {
   font-size: 0.75rem;
-  border: 1px solid #274c77;
   border-radius: 4px;
   padding: 0.25rem;
   background-color: #274c77;
@@ -727,12 +726,32 @@ body {
   text-align: center;
 }
 
-.house__pop-up--select {
+.house__pop-up--selected-activity {
+  color: #ef8354;
+}
+
+.house__pop-up--options {
   padding: 0.5rem;
   width: 8rem;
   font-size: 0.6rem;
   margin: 0 0 1rem 0;
   outline: none;
+}
+
+.house__pop-up--select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .house__pop-up--btn {
@@ -774,6 +793,128 @@ body {
 
 .house__pop-up--cancel:hover {
   color: #ffffff;
+}
+
+.wall {
+  padding: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.wall__comment {
+  width: 16rem;
+  height: 4rem;
+  border: 0.5px solid #274c77;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 0 1rem 0;
+  -webkit-box-shadow: 0 5px 5px 0 #edeff5;
+          box-shadow: 0 5px 5px 0 #edeff5;
+}
+
+.wall__content {
+  width: 70%;
+  height: 80%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.wall__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wall__user-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.wall__user-name {
+  font-family: "Roboto Medium";
+  color: #274c77;
+  font-size: 0.9rem;
+}
+
+.wall__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 0 0;
+}
+
+.wall__input {
+  width: 100%;
+  height: 4rem;
+  font-family: "Roboto Regular";
+  border-radius: 4px;
+  margin: 0 0 1.5rem 0;
+  border-style: none;
+  border: 0.5px solid #ef8354;
+  padding: 0.5rem;
+  outline: none;
+  resize: none;
+  -webkit-box-shadow: 0 5px 5px 0 #edeff5;
+          box-shadow: 0 5px 5px 0 #edeff5;
+}
+
+.wall__input:focus {
+  border: 2px solid #ef8354;
+}
+
+.wall__btn {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  font-family: "Roboto Medium";
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  border: 2px solid #ef8354;
+  background-color: #ef8354;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  -webkit-box-shadow: 0 5px 5px 0 #edeff5;
+          box-shadow: 0 5px 5px 0 #edeff5;
+}
+
+.wall__btn:hover {
+  border: 2px solid #274c77;
+  background-color: #274c77;
 }
 
 @font-face {

@@ -51,11 +51,7 @@ function Header(props) {
         </Link>
       </div>
       <div className="header__dashboard">
-        <Link
-          className="header__dashboard--link"
-          to={`/dashboard`}
-          onClick={toggleMenu}
-        >
+        <Link className="header__dashboard--link" to={`/dashboard`}>
           <img className="header__dashboard--icon" src={icon} alt="" />
         </Link>
       </div>

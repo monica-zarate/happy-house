@@ -20,62 +20,13 @@ class Dashboard extends React.Component {
       users: [],
       toDos: [],
       toDosPerDay: {
-        monday: [
-          {
-            id: "",
-            name: "",
-            user: "",
-            userColor: "",
-          },
-        ],
-        tuesday: [
-          {
-            id: "",
-            name: "",
-            user: "",
-            userColor: "",
-          },
-        ],
-        wednesday: [
-          {
-            id: "",
-            name: "",
-            user: "",
-            userColor: "",
-          },
-        ],
-        thursday: [
-          {
-            id: "",
-            name: "",
-            user: "",
-            userColor: "",
-          },
-        ],
-        friday: [
-          {
-            id: "",
-            name: "",
-            user: "",
-            userColor: "",
-          },
-        ],
-        saturday: [
-          {
-            id: "",
-            name: "",
-            user: "",
-            userColor: "",
-          },
-        ],
-        sunday: [
-          {
-            id: "",
-            name: "",
-            user: "",
-            userColor: "",
-          },
-        ],
+        monday: [],
+        tuesday: [],
+        wednesday: [],
+        thursday: [],
+        friday: [],
+        saturday: [],
+        sunday: [],
       },
       comments: [],
     },
@@ -140,7 +91,9 @@ class Dashboard extends React.Component {
           />
           <Route
             path="/dashboard/wall"
-            render={() => <Wall house={this.state.house} />}
+            render={() => (
+              <Wall house={this.state.house} user={this.props.user} />
+            )}
           />
         </Switch>
       </>

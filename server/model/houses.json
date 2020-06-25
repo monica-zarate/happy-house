@@ -5,31 +5,45 @@
     "toDosPerDay": {
       "monday": [
         {
-          "id": "2",
+          "toDoId": "bb0ff523-dbec-488a-be57-f18bea220cf2",
           "name": "take out the trash",
           "user": "Manuel",
           "userColor": "#248232"
         },
 
         {
-          "toDoId": "fd0c9045-6a47-4c6a-ae20-4995198e506e",
-          "name": "DO THE LAUNDRY",
+          "toDoId": "6a73e773-5db1-428d-b1c7-216c90dd9dd8",
+          "name": "meal prep",
           "user": "Monica",
           "userColor": "#eb9486"
         }
       ],
-      "tuesday": [
+      "tuesday": [],
+      "wednesday": [
         {
-          "toDoId": "3",
+          "toDoId": "7980f68c-1176-4fe7-980c-a5e59965f595",
+          "name": "vacuum",
+          "user": "Manuel",
+          "userColor": "#248232"
+        }
+      ],
+      "thursday": [],
+      "friday": [
+        {
+          "toDoId": "82b9f666-ae10-462f-ae79-d65bfb6a68e9",
           "name": "do the laundry",
           "user": "Monica",
           "userColor": "#eb9486"
         }
       ],
-      "wednesday": [],
-      "thursday": [],
-      "friday": [],
-      "saturday": [],
+      "saturday": [
+        {
+          "toDoId": "8a27d5b3-a686-46b5-9f28-1108f0e856dc",
+          "name": "vacuum",
+          "user": "Manuel",
+          "userColor": "#248232"
+        }
+      ],
       "sunday": []
     },
     "toDos": [
@@ -45,16 +59,16 @@
     ],
     "comments": [
       {
-        "id": "a",
-        "userName": "Monica",
-        "comment": "I will go grocery shopping after work today",
-        "timestamp": "June 15th 2020"
-      },
-      {
         "id": "b",
         "userName": "Manuel",
         "comment": "We're out of milk!",
         "timestamp": "June 9th 2020"
+      },
+      {
+        "id": "a",
+        "userName": "Monica",
+        "comment": "I will go grocery shopping after work today",
+        "timestamp": "June 15th 2020"
       }
     ]
   },
@@ -62,42 +76,15 @@
     "id": "2",
     "houseName": "Coyoacan",
     "toDos": [
-      {
-        "id": "i",
-        "name": "vacuum"
-      },
-      {
-        "id": "ii",
-        "name": "do the laundry"
-      },
-      {
-        "id": "iii",
-        "name": "take out the trash"
-      },
-      {
-        "id": "iv",
-        "name": "meal prep"
-      },
-      {
-        "id": "v",
-        "name": "mop"
-      },
-      {
-        "id": "vi",
-        "name": "go grocery shopping"
-      },
-      {
-        "id": "vii",
-        "name": "clean the bathroom"
-      },
-      {
-        "id": "viii",
-        "name": "water the plants"
-      },
-      {
-        "id": "ix",
-        "name": "dust"
-      }
+      { "id": "i", "name": "vacuum" },
+      { "id": "ii", "name": "do the laundry" },
+      { "id": "iii", "name": "take out the trash" },
+      { "id": "iv", "name": "meal prep" },
+      { "id": "v", "name": "mop" },
+      { "id": "vi", "name": "go grocery shopping" },
+      { "id": "vii", "name": "clean the bathroom" },
+      { "id": "viii", "name": "water the plants" },
+      { "id": "ix", "name": "dust" }
     ],
     "comments": [
       {
