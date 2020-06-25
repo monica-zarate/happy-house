@@ -10,6 +10,10 @@ function Header(props) {
   // Display Menu Preview on Click event
   let menuPreview = (event) => {
     event.preventDefault();
+    toggleMenu();
+  };
+
+  let toggleMenu = () => {
     let menu = document.getElementsByClassName("menu")[0];
     if (menu.style.display === "block") {
       menu.style.display = "none";
@@ -17,6 +21,8 @@ function Header(props) {
       menu.style.display = "block";
     }
   };
+
+  // Remove Menu Preview Once a Button is clicked
 
   // Log Out Method to set a blank State
   let logOut = () => {
@@ -45,7 +51,11 @@ function Header(props) {
         </Link>
       </div>
       <div className="header__dashboard">
-        <Link className="header__dashboard--link" to={`/dashboard`}>
+        <Link
+          className="header__dashboard--link"
+          to={`/dashboard`}
+          onClick={toggleMenu}
+        >
           <img className="header__dashboard--icon" src={icon} alt="" />
         </Link>
       </div>
@@ -59,10 +69,18 @@ function Header(props) {
             <h3 className="menu__wrapper--user-name">{props.user.userName}</h3>
           </div>
           <div className="menu__options">
-            <Link className="menu__options--link" to={`/dashboard/profile`}>
+            <Link
+              className="menu__options--link"
+              to={`/dashboard/profile`}
+              onClick={toggleMenu}
+            >
               <button className="menu__options--btn">My Profile</button>
             </Link>
-            <Link className="menu__options--link" to={`/dashboard/my-house`}>
+            <Link
+              className="menu__options--link"
+              to={`/dashboard/my-house`}
+              onClick={toggleMenu}
+            >
               <button className="menu__options--btn">
                 {props.house.houseName}
               </button>

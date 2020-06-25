@@ -4,54 +4,29 @@
     "houseName": "Oportos",
     "toDosPerDay": {
       "monday": [
-        { "id": "2", "name": "take out the trash", "user": "Manuel" },
+        {
+          "id": "2",
+          "name": "take out the trash",
+          "user": "Manuel",
+          "userColor": "#248232"
+        },
 
         {
           "toDoId": "fd0c9045-6a47-4c6a-ae20-4995198e506e",
           "name": "DO THE LAUNDRY",
-          "user": "Monica"
-        },
-        {
-          "toDoId": "030299ac-430d-4492-889b-54641504f5cb",
-          "name": "CLEAN THE BATHROOM",
-          "user": "Monica"
+          "user": "Monica",
+          "userColor": "#eb9486"
         }
       ],
       "tuesday": [
-        { "toDoId": "3", "name": "do the laundry", "user": "Monica" },
         {
-          "toDoId": "b158cf0f-e82c-40c6-9663-3d29aa142866",
-          "name": "MEAL PREP",
-          "user": "Monica"
-        },
-        {
-          "toDoId": "61a5badd-d1cf-4d8a-8170-adcbff181529",
-          "name": "WATER PLANTS",
-          "user": "Monica"
-        },
-        {
-          "toDoId": "93956c6b-6e18-468d-acd4-99b0504c5248",
-          "name": "MOPPING",
-          "user": "Monica"
+          "toDoId": "3",
+          "name": "do the laundry",
+          "user": "Monica",
+          "userColor": "#eb9486"
         }
       ],
-      "wednesday": [
-        {
-          "toDoId": "88284fb2-e18c-4e53-aabc-ce27c095909a",
-          "name": "trapiar",
-          "user": "barrer"
-        },
-        {
-          "toDoId": "e452620f-28ac-44dc-809a-7a2f5909bd76",
-          "name": "trapiar",
-          "user": "ponin loco"
-        },
-        {
-          "toDoId": "81393820-fd3c-4f28-9be4-84b5adea7d9e",
-          "name": "DUSTING",
-          "user": "Monica"
-        }
-      ],
+      "wednesday": [],
       "thursday": [],
       "friday": [],
       "saturday": [],

@@ -5,7 +5,7 @@
     "email": "monica@gmail.com",
     "password": "1234",
     "houseName": "Oportos",
-    "color": "coral"
+    "color": "#eb9486"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "email": "manuel@gmail.com",
     "password": "9876",
     "houseName": "Oportos",
-    "color": "green"
+    "color": "#248232"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "email": "tete@gmail.com",
     "password": "1234",
     "houseName": "Coyoacan",
-    "color": "lilac"
+    "color": "#9d8189"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "email": "guante@gmail.com",
     "password": "9876",
     "houseName": "Coyoacan",
-    "color": "yellow"
+    "color": "#ffd23f"
   },
   {
     "id": "5",
@@ -37,13 +37,13 @@
     "email": "petite@gmail.com",
     "password": "2468",
     "houseName": "Coyoacan",
-    "color": "green"
+    "color": "#248232"
   },
   {
     "id": "5ccafa40-e757-4caf-a9b5-0ddb8c1c2ff1",
     "userName": "Memin",
     "password": "1234",
     "houseName": "Oportos",
-    "color": "lilac"
+    "color": "#9d8189"
   }
 ]

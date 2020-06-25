@@ -36,10 +36,12 @@ function House(props) {
     let selectedActivity = document.getElementById("selectedActivity")
       .innerHTML;
     let currentUser = props.user.userName;
+    let color = props.user.color;
     let newActivity = {
       day: selectedDay,
       name: selectedActivity,
       user: currentUser,
+      userColor: color,
     };
     Axios.post(`/houses/${props.house.houseName}`, newActivity)
       .then((response) => {
@@ -69,11 +71,19 @@ function House(props) {
           </p>
           <div className="house__pop-up">
             <h3 className="house__pop-up--title">
-              When can you
-              <span id="selectedActivity"></span>?
+              When can you &nbsp
+              <span
+                className="house__pop-up--selected-activity"
+                id="selectedActivity"
+              ></span>
+              ?
             </h3>
-            <form action="" onSubmit={selectActivity}>
-              <select className="house__pop-up--select" name="day" id="day">
+            <form
+              action=""
+              onSubmit={selectActivity}
+              className="house__pop-up--select"
+            >
+              <select name="day" id="day">
                 <option value="0">Select a Day:</option>
                 <option value="monday">Monday</option>
                 <option value="tuesday">Tuesday</option>

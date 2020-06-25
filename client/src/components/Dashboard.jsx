@@ -20,13 +20,62 @@ class Dashboard extends React.Component {
       users: [],
       toDos: [],
       toDosPerDay: {
-        monday: [],
-        tuesday: [],
-        wednesday: [],
-        thursday: [],
-        friday: [],
-        saturday: [],
-        sunday: [],
+        monday: [
+          {
+            id: "",
+            name: "",
+            user: "",
+            userColor: "",
+          },
+        ],
+        tuesday: [
+          {
+            id: "",
+            name: "",
+            user: "",
+            userColor: "",
+          },
+        ],
+        wednesday: [
+          {
+            id: "",
+            name: "",
+            user: "",
+            userColor: "",
+          },
+        ],
+        thursday: [
+          {
+            id: "",
+            name: "",
+            user: "",
+            userColor: "",
+          },
+        ],
+        friday: [
+          {
+            id: "",
+            name: "",
+            user: "",
+            userColor: "",
+          },
+        ],
+        saturday: [
+          {
+            id: "",
+            name: "",
+            user: "",
+            userColor: "",
+          },
+        ],
+        sunday: [
+          {
+            id: "",
+            name: "",
+            user: "",
+            userColor: "",
+          },
+        ],
       },
       comments: [],
     },
@@ -68,7 +117,12 @@ class Dashboard extends React.Component {
           <Route
             exact
             path="/dashboard"
-            render={() => <Calendar toDos={this.state.house.toDosPerDay} />}
+            render={() => (
+              <Calendar
+                toDos={this.state.house.toDosPerDay}
+                user={this.props.user}
+              />
+            )}
           />
           <Route
             path="/dashboard/profile"

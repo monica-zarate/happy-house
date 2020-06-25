@@ -28,12 +28,14 @@ app
     let newId = uuidv4();
     let toDoName = req.body.name;
     let toDoUser = req.body.user;
+    let color = req.body.color;
     let day = req.body.day;
     let myHouse = houses.filter((house) => house.houseName == houseName)[0];
     let newToDo = {
       toDoId: newId,
       name: toDoName,
       user: toDoUser,
+      userColor: color,
     };
     myHouse.toDosPerDay[day].push(newToDo);
     fs.writeFileSync("./model/houses.json", JSON.stringify(houses));

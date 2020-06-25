@@ -12,36 +12,13 @@ function Calendar(props) {
         </div>
         <div className="calendar__doing">
           {props.toDos.monday.map((activity) => (
-            <>
-              <p className="calendar__doing--description">{activity.name}</p>
-              <p className="calendar__doing--description">{activity.user}</p>
-            </>
+            <p
+              className="calendar__doing--description"
+              style={{ backgroundColor: activity.userColor }}
+            >
+              {activity.user}: {activity.name}
+            </p>
           ))}
-        </div>
-      </div>
-
-      <div className="calendar__activity-wrapper">
-        <div className="calendar__date">
-          <p className="calendar__date--dotw">TUE</p>
-          <p className="calendar__date--day">23</p>
-        </div>
-        <div className="calendar__doing">
-          {props.toDos.tuesday.map((activity) => (
-            <>
-              <p className="calendar__doing--description">{activity.name}</p>
-              <p className="calendar__doing--description">{activity.user}</p>
-            </>
-          ))}
-        </div>
-      </div>
-
-      {/* <div className="calendar__activity-wrapper">
-        <div className="calendar__date">
-          <p className="calendar__date--dotw">MON</p>
-          <p className="calendar__date--day">22</p>
-        </div>
-        <div className="calendar__doing">
-          <p className="calendar__doing--description">Laundry Day</p>
         </div>
       </div>
       <div className="calendar__activity-wrapper">
@@ -50,7 +27,14 @@ function Calendar(props) {
           <p className="calendar__date--day">23</p>
         </div>
         <div className="calendar__doing">
-          <p className="calendar__doing--description">Vacuuming</p>
+          {props.toDos.tuesday.map((activity) => (
+            <p
+              className="calendar__doing--description"
+              style={{ backgroundColor: activity.userColor }}
+            >
+              {activity.user}: {activity.name}
+            </p>
+          ))}
         </div>
       </div>
       <div className="calendar__activity-wrapper">
@@ -59,8 +43,14 @@ function Calendar(props) {
           <p className="calendar__date--day">24</p>
         </div>
         <div className="calendar__doing">
-          <p className="calendar__doing--description">Meal-prep</p>
-          <p className="calendar__doing--description">Meal-prep</p>
+          {props.toDos.wednesday.map((activity) => (
+            <p
+              className="calendar__doing--description"
+              style={{ backgroundColor: activity.userColor }}
+            >
+              {activity.user}: {activity.name}
+            </p>
+          ))}
         </div>
       </div>
       <div className="calendar__activity-wrapper">
@@ -69,7 +59,14 @@ function Calendar(props) {
           <p className="calendar__date--day">25</p>
         </div>
         <div className="calendar__doing">
-          <p className="calendar__doing--description">Grocery Shopping</p>
+          {props.toDos.thursday.map((activity) => (
+            <p
+              className="calendar__doing--description"
+              style={{ backgroundColor: activity.userColor }}
+            >
+              {activity.user}: {activity.name}
+            </p>
+          ))}
         </div>
       </div>
       <div className="calendar__activity-wrapper">
@@ -78,7 +75,14 @@ function Calendar(props) {
           <p className="calendar__date--day">26</p>
         </div>
         <div className="calendar__doing">
-          <p className="calendar__doing--description"></p>
+          {props.toDos.friday.map((activity) => (
+            <p
+              className="calendar__doing--description"
+              style={{ backgroundColor: activity.userColor }}
+            >
+              {activity.user}: {activity.name}
+            </p>
+          ))}
         </div>
       </div>
       <div className="calendar__activity-wrapper">
@@ -87,7 +91,14 @@ function Calendar(props) {
           <p className="calendar__date--day">27</p>
         </div>
         <div className="calendar__doing">
-          <p className="calendar__doing--description"></p>
+          {props.toDos.saturday.map((activity) => (
+            <p
+              className="calendar__doing--description"
+              style={{ backgroundColor: activity.userColor }}
+            >
+              {activity.user}: {activity.name}
+            </p>
+          ))}
         </div>
       </div>
       <div className="calendar__activity-wrapper">
@@ -96,9 +107,16 @@ function Calendar(props) {
           <p className="calendar__date--day">28</p>
         </div>
         <div className="calendar__doing">
-          <p className="calendar__doing--description"></p>
+          {props.toDos.sunday.map((activity) => (
+            <p
+              className="calendar__doing--description"
+              style={{ backgroundColor: activity.userColor }}
+            >
+              {activity.user}: {activity.name}
+            </p>
+          ))}
         </div>
-      </div> */}
+      </div>
     </main>
   );
 }
