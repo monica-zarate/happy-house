@@ -43,10 +43,12 @@ class Dashboard extends React.Component {
     }
   }
 
+  // updateHouseHandler Method to update House State and pass as props to Header and House Components
   updateHouseHandler(houseResponse) {
     this.setState({ house: houseResponse });
   }
 
+  // Getting the House the logged-in user belongs to
   componentDidMount() {
     let name = this.props.user.houseName;
     console.log("Bringing Happy House: " + name);
@@ -74,7 +76,13 @@ class Dashboard extends React.Component {
           />
           <Route
             path="/dashboard/my-house"
-            render={() => <House house={this.state.house} />}
+            render={() => (
+              <House
+                house={this.state.house}
+                user={this.props.user}
+                updateHouseHandler={this.updateHouseHandler.bind(this)}
+              />
+            )}
           />
           <Route
             path="/dashboard/wall"

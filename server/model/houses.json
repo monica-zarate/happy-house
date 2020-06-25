@@ -4,11 +4,36 @@
     "houseName": "Oportos",
     "toDosPerDay": {
       "monday": [
-        { "id": "1", "name": "vacuuming", "user": "Manuel" },
-        { "id": "2", "name": "take out the trash", "user": "Manuel" }
+        { "id": "2", "name": "take out the trash", "user": "Manuel" },
+
+        {
+          "toDoId": "fd0c9045-6a47-4c6a-ae20-4995198e506e",
+          "name": "DO THE LAUNDRY",
+          "user": "Monica"
+        },
+        {
+          "toDoId": "030299ac-430d-4492-889b-54641504f5cb",
+          "name": "CLEAN THE BATHROOM",
+          "user": "Monica"
+        }
       ],
       "tuesday": [
-        { "toDoId": "3", "name": "do the laundry", "user": "Monica" }
+        { "toDoId": "3", "name": "do the laundry", "user": "Monica" },
+        {
+          "toDoId": "b158cf0f-e82c-40c6-9663-3d29aa142866",
+          "name": "MEAL PREP",
+          "user": "Monica"
+        },
+        {
+          "toDoId": "61a5badd-d1cf-4d8a-8170-adcbff181529",
+          "name": "WATER PLANTS",
+          "user": "Monica"
+        },
+        {
+          "toDoId": "93956c6b-6e18-468d-acd4-99b0504c5248",
+          "name": "MOPPING",
+          "user": "Monica"
+        }
       ],
       "wednesday": [
         {
@@ -20,6 +45,11 @@
           "toDoId": "e452620f-28ac-44dc-809a-7a2f5909bd76",
           "name": "trapiar",
           "user": "ponin loco"
+        },
+        {
+          "toDoId": "81393820-fd3c-4f28-9be4-84b5adea7d9e",
+          "name": "DUSTING",
+          "user": "Monica"
         }
       ],
       "thursday": [],
@@ -28,16 +58,15 @@
       "sunday": []
     },
     "toDos": [
-      { "id": "i", "name": "vacuuming" },
+      { "id": "i", "name": "vacuum" },
       { "id": "ii", "name": "do the laundry" },
       { "id": "iii", "name": "take out the trash" },
       { "id": "iv", "name": "meal prep" },
-      { "id": "v", "name": "mopping" },
-      { "id": "vi", "name": "grocery shopping" },
+      { "id": "v", "name": "mop" },
+      { "id": "vi", "name": "go grocery shopping" },
       { "id": "vii", "name": "clean the bathroom" },
-      { "id": "viii", "name": "water plants" },
-      { "id": "ix", "name": "grocery shopping" },
-      { "id": "x", "name": "dusting" }
+      { "id": "viii", "name": "water the plants" },
+      { "id": "ix", "name": "dust" }
     ],
     "comments": [
       {
@@ -49,7 +78,7 @@
       {
         "id": "b",
         "userName": "Manuel",
-        "comment": "I finished the milk in the morning!",
+        "comment": "We're out of milk!",
         "timestamp": "June 9th 2020"
       }
     ]
@@ -58,16 +87,42 @@
     "id": "2",
     "houseName": "Coyoacan",
     "toDos": [
-      { "id": "i", "name": "vacuuming" },
-      { "id": "ii", "name": "do the laundry" },
-      { "id": "iii", "name": "take out the trash" },
-      { "id": "iv", "name": "meal prep" },
-      { "id": "v", "name": "mopping" },
-      { "id": "vi", "name": "grocery shopping" },
-      { "id": "vii", "name": "clean the bathroom" },
-      { "id": "viii", "name": "water plants" },
-      { "id": "ix", "name": "grocery shopping" },
-      { "id": "x", "name": "dusting" }
+      {
+        "id": "i",
+        "name": "vacuum"
+      },
+      {
+        "id": "ii",
+        "name": "do the laundry"
+      },
+      {
+        "id": "iii",
+        "name": "take out the trash"
+      },
+      {
+        "id": "iv",
+        "name": "meal prep"
+      },
+      {
+        "id": "v",
+        "name": "mop"
+      },
+      {
+        "id": "vi",
+        "name": "go grocery shopping"
+      },
+      {
+        "id": "vii",
+        "name": "clean the bathroom"
+      },
+      {
+        "id": "viii",
+        "name": "water the plants"
+      },
+      {
+        "id": "ix",
+        "name": "dust"
+      }
     ],
     "comments": [
       {
@@ -94,24 +149,6 @@
     "id": "f8cf2591-949a-4afb-bd35-48b53158fa51",
     "houseName": "Jicama",
     "toDos": [],
-    "comments": []
-  },
-  {
-    "id": "adc663ce-f577-4ed9-bfb5-20e69a6935ca",
-    "toDos": [],
-    "toDosPerDay": [],
-    "comments": []
-  },
-  {
-    "id": "0d25c311-7e86-40d5-86cd-aa2e2ffbcd37",
-    "toDos": [],
-    "toDosPerDay": [],
-    "comments": []
-  },
-  {
-    "id": "02574fa1-5e0b-4a5a-8310-f090eba7e9ae",
-    "toDos": [],
-    "toDosPerDay": [],
     "comments": []
   }
 ]

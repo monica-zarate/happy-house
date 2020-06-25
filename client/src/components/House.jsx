@@ -5,8 +5,7 @@ import todo from "../assets/icons/hh-icon.svg";
 
 function House(props) {
   // Display Schedule Activity Pop-up on Click event
-
-  let popUp = (event) => {
+  let openPopUp = (event) => {
     event.preventDefault();
     let popUp = document.getElementsByClassName("house__pop-up")[0];
     if (popUp.style.display === "flex") {
@@ -18,25 +17,44 @@ function House(props) {
       event.target.innerText;
   };
 
+  // Close pop-up onClick event for Cancel button
+  let closePopUp = (event) => {
+    event.preventDefault();
+    let popUp = document.getElementsByClassName("house__pop-up")[0];
+    if (popUp.style.display === "flex") {
+      popUp.style.display = "none";
+    } else {
+      popUp.style.display = "flex";
+    }
+  };
+
+  // Post new activity to API and close pop-up
   let selectActivity = (event) => {
     event.preventDefault();
-    console.log(event.target.color.value);
-    let day = document.getElementsByClassName("house__pop-up--select")[0].value;
-    let activity = document.getElementById("selectedActivity").innerHTML;
-
-    let newActivityPerDay = {
-      toDosPerDay: {
-        day: event.target.color.value,
-      },
+    console.log(event.target.day.value);
+    let selectedDay = event.target.day.value;
+    let selectedActivity = document.getElementById("selectedActivity")
+      .innerHTML;
+    let currentUser = props.user.userName;
+    let newActivity = {
+      day: selectedDay,
+      name: selectedActivity,
+      user: currentUser,
     };
-    Axios.post("/houses", newActivityPerDay)
+    Axios.post(`/houses/${props.house.houseName}`, newActivity)
       .then((response) => {
         console.log("New activity added");
-        this.popUp();
+        props.updateHouseHandler(response.data);
       })
       .catch((error) => {
         console.log(error);
       });
+    let popUp = document.getElementsByClassName("house__pop-up")[0];
+    if (popUp.style.display === "flex") {
+      popUp.style.display = "none";
+    } else {
+      popUp.style.display = "flex";
+    }
   };
 
   return (
@@ -55,28 +73,28 @@ function House(props) {
               <span id="selectedActivity"></span>?
             </h3>
             <form action="" onSubmit={selectActivity}>
-              <select className="house__pop-up--select" name="color" id="color">
+              <select className="house__pop-up--select" name="day" id="day">
                 <option value="0">Select a Day:</option>
-                <option value="1">Monday</option>
-                <option value="2">Tuesday</option>
-                <option value="3">Wednesday</option>
-                <option value="4">Thursday</option>
-                <option value="5">Friday</option>
-                <option value="6">Saturday</option>
-                <option value="7">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
               </select>
               <button type="submit" className="house__pop-up--btn">
                 Schedule
               </button>
-              <button className="house__pop-up--cancel" onClick={popUp}>
-                Cancel
-              </button>
             </form>
+            <button className="house__pop-up--cancel" onClick={closePopUp}>
+              Cancel
+            </button>
           </div>
           <ul className="house__list">
             {props.house.toDos.map((activity) => (
               <li key={activity.id} className="house__activity">
-                <button onClick={popUp} className="house__activity--btn">
+                <button onClick={openPopUp} className="house__activity--btn">
                   {activity.name}
                 </button>
               </li>
