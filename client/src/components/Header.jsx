@@ -13,6 +13,7 @@ function Header(props) {
     toggleMenu();
   };
 
+  // Toggle Method to close Menu on click event
   let toggleMenu = () => {
     let menu = document.getElementsByClassName("menu")[0];
     if (menu.style.display === "block") {
@@ -21,8 +22,6 @@ function Header(props) {
       menu.style.display = "block";
     }
   };
-
-  // Remove Menu Preview Once a Button is clicked
 
   // Log Out Method to set a blank State
   let logOut = () => {
