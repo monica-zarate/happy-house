@@ -2,13 +2,13 @@
 
 Hello and Welcome to Happy House!
 
-Application is responsive for mobile and tablet devices. Is meant to be mainly used on mobile decives.
+The application is responsive for mobile and tablet devices. It is meant to be mainly used on mobile devices.
 
 Create New House with New User forms are habilitated. 
 
-Create New User and Add User to existing house is habilitated.
+Create New User and Add User to an existing house is habilitated.
 
-Log-In option hablitated. Please use following credentials:
+Log-In option habilitated. Please use the following credentials:
 User Name: Monica
 Password: 1234
 
