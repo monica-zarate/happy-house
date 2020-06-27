@@ -1,10 +1,15 @@
-.wall {
-  padding: 2rem 2rem;
-  display: flex;
-  flex-direction: column;
+// Wall Component Styles
 
-  align-items: center;
+.wall {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  @extend .flex-center;
   height: 100%;
+
+  @include tablet {
+    width: 30rem;
+    max-width: 48rem;
+  }
 
   &__comment {
     width: 16rem;
@@ -16,6 +21,11 @@
     justify-content: space-around;
     margin: 0 0 1rem 0;
     box-shadow: 0 5px 5px 0 $background-primary;
+
+    @include tablet {
+      width: 18rem;
+      height: 5rem;
+    }
   }
 
   &__content {
@@ -23,13 +33,14 @@
     height: 80%;
     padding: 0.5rem;
     font-size: 0.8rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
   }
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .flex-center;
   }
 
   &__user-icon {
@@ -41,13 +52,14 @@
     font-family: $medium;
     color: $primary;
     font-size: 0.9rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
   }
 
   &__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .flex-center;
     margin: 1rem 0 0 0;
   }
 
@@ -65,6 +77,12 @@
     box-shadow: 0 5px 5px 0 $background-primary;
     &:focus {
       border: 2px solid $highlight;
+    }
+
+    @include tablet {
+      width: 18rem;
+      height: 5rem;
+      font-size: 1rem;
     }
   }
 
@@ -86,6 +104,12 @@
     &:hover {
       border: 2px solid $primary;
       background-color: $primary;
+    }
+
+    @include tablet {
+      width: 18rem;
+      height: 3rem;
+      font-size: 1.25rem;
     }
   }
 }

@@ -28,7 +28,7 @@ function House(props) {
     }
   };
 
-  // Post new activity to API and close pop-up
+  // Post new activity  per day to API and close pop-up
   let selectActivity = (event) => {
     event.preventDefault();
     console.log(event.target.day.value);
@@ -109,9 +109,6 @@ function House(props) {
                 </button>
               </li>
             ))}
-            <li className="house__activity">
-              <button className="house__activity--btn">Add New </button>
-            </li>
           </ul>
         </div>
       </div>

@@ -42,7 +42,7 @@ app
     res.json(myHouse);
   });
 
-// Get/Post House Routes
+// Get All Houses / Post New House Routes
 app
   .route("/houses")
   .get((req, res) => {
@@ -53,8 +53,26 @@ app
     const houseObject = {
       id: uuidv4(),
       houseName: req.body.houseName,
-      toDos: [],
-      toDosPerDay: [],
+      toDos: [
+        { id: "i", name: "vacuum" },
+        { id: "ii", name: "do the laundry" },
+        { id: "iii", name: "take out the trash" },
+        { id: "iv", name: "meal prep" },
+        { id: "v", name: "mop" },
+        { id: "vi", name: "go grocery shopping" },
+        { id: "vii", name: "clean the bathroom" },
+        { id: "viii", name: "water the plants" },
+        { id: "ix", name: "dust" },
+      ],
+      toDosPerDay: {
+        monday: [],
+        tuesday: [],
+        wednesday: [],
+        thursday: [],
+        friday: [],
+        saturday: [],
+        sunday: [],
+      },
       comments: [],
     };
     housesArray.push(houseObject);

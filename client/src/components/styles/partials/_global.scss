@@ -26,12 +26,13 @@ body {
 // Utility Classes
 
 .container {
-  max-width: $desktop-width;
+  max-width: $tablet-width;
   margin: 0 auto;
 }
 
 .flex-center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

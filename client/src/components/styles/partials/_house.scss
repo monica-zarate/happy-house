@@ -1,29 +1,45 @@
+// House Component Styles
+
 .house {
   background-color: $white;
   padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem 0;
+  @extend .flex-center;
+  margin: 1rem auto 0 auto;
+  max-width: 23.5rem;
+
+  @include tablet {
+    width: 30rem;
+    max-width: 48rem;
+  }
 
   &__title {
     font-family: $slab-bold;
     font-size: 2rem;
     margin: 0 0 1rem 0;
     color: $primary;
+
+    @include tablet {
+      font-size: 3rem;
+    }
   }
 
   &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .flex-center;
+
+    @include tablet {
+      width: 25rem;
+    }
   }
 
   &__icon {
     width: 3rem;
     height: 3rem;
     margin: 0 0 1rem 0;
+
+    @include tablet {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 
   &__todo {
@@ -31,6 +47,10 @@
     font-size: 1.5rem;
     margin: 0 0 1rem 0;
     font-family: $medium;
+
+    @include tablet {
+      font-size: 2rem;
+    }
   }
   &__description {
     color: $primary;
@@ -38,14 +58,16 @@
     font-size: 0.7rem;
     width: 9rem;
     text-align: center;
+
+    @include tablet {
+      font-size: 1.25rem;
+      width: 12rem;
+    }
   }
 
   &__list {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .flex-center;
   }
 
   &__activity {
@@ -67,6 +89,12 @@
         border: 2px solid $primary;
         background-color: $primary;
       }
+
+      @include tablet {
+        width: 15rem;
+        height: 3rem;
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -75,15 +103,19 @@
     width: 12rem;
     height: 13.5rem;
     background-color: $primary;
+    @extend .flex-center;
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     right: 5.75rem;
     top: 8rem;
     border-radius: 4px;
     box-shadow: 0 5px 5px 0 $background-primary;
+
+    @include tablet {
+      right: 15.75rem;
+      width: 16.5rem;
+      height: 20rem;
+    }
 
     &--title {
       font-family: $medium;
@@ -91,6 +123,11 @@
       color: $white;
       margin: 0 0 1rem 0;
       text-align: center;
+
+      @include tablet {
+        font-size: 1.25rem;
+        margin: 0 0 1.5rem 0;
+      }
     }
 
     &--selected-activity {
@@ -103,13 +140,16 @@
       font-size: 0.6rem;
       margin: 0 0 1rem 0;
       outline: none;
+
+      @include tablet {
+        width: 12rem;
+        font-size: 1rem;
+        margin: 0 0 1.5rem 0;
+      }
     }
 
     &--select {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @extend .flex-center;
     }
 
     &--btn {
@@ -132,6 +172,12 @@
         color: $highlight;
         border: 2px solid $white;
       }
+
+      @include tablet {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1rem;
+      }
     }
 
     &--cancel {
@@ -149,6 +195,12 @@
 
       &:hover {
         color: $white;
+      }
+
+      @include tablet {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.1rem;
       }
     }
   }

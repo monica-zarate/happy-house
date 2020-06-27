@@ -19,7 +19,7 @@ class App extends React.Component {
     },
   };
 
-  // Set State Handler to use as Props for LogIn and Dashboard Components
+  // Set State Handler for User to use as Props for LogIn and Dashboard Components
   userStateUpdateHandler(userResponse) {
     this.setState({ user: userResponse });
   }
@@ -37,7 +37,15 @@ class App extends React.Component {
               />
             )}
           />
-          <Route path="/join" component={Join} />
+          <Route
+            path="/join"
+            render={() => (
+              <Join
+                userStateUpdateMethod={this.userStateUpdateHandler.bind(this)}
+                user={this.state.user}
+              />
+            )}
+          />
           <Route
             path="/dashboard"
             render={({ match }) => (

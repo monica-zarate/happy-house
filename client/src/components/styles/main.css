@@ -18,14 +18,18 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
-.flex-center {
+.flex-center, .landing, .landing__wrapper, .join, .join__container, .join__form, .join__success, .login, .login__form, .header__dashboard, .menu__wrapper, .menu__options, .calendar, .calendar__date, .calendar__doing, .profile, .profile__info, .update, .house, .house__container, .house__list, .house__pop-up, .house__pop-up--select, .wall, .wall__wrapper, .wall__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -37,17 +41,13 @@ body {
 .landing {
   margin: 0 auto;
   padding: 2rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .landing {
+    padding: 5rem;
+  }
 }
 
 .landing__title {
@@ -57,10 +57,23 @@ body {
   font-size: 2.5rem;
 }
 
+@media (min-width: 768px) {
+  .landing__title {
+    font-size: 4rem;
+  }
+}
+
 .landing__logo {
   width: 5rem;
   height: 5rem;
   margin: 0 0 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .landing__logo {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 .landing__description {
@@ -69,18 +82,14 @@ body {
   font-family: "Roboto Slab Medium";
 }
 
+@media (min-width: 768px) {
+  .landing__description {
+    font-size: 2rem;
+  }
+}
+
 .landing__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .landing__link {
@@ -107,20 +116,24 @@ body {
   background-color: #ef8354;
 }
 
+@media (min-width: 768px) {
+  .landing__btn {
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+}
+
 .join {
   padding: 3rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .join {
+    padding: 5rem;
+  }
 }
 
 .join__cta, .join__btn {
@@ -144,6 +157,14 @@ body {
   background-color: #ef8354;
 }
 
+@media (min-width: 768px) {
+  .join__cta, .join__btn {
+    width: 18rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+  }
+}
+
 .join__cta--cancel, .join__btn--cancel {
   width: 13rem;
   font-family: "Roboto Medium";
@@ -157,19 +178,20 @@ body {
   margin: 0 0 2rem 0;
 }
 
+@media (min-width: 768px) {
+  .join__cta--cancel, .join__btn--cancel {
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+}
+
 .join__btn-link-cancel {
   margin: 0;
 }
 
 .join__container {
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0 1rem;
   width: 100%;
   border-radius: 4px;
@@ -184,20 +206,10 @@ body {
   margin: 0 0 1rem 0;
 }
 
-.join__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .join__title {
+    font-size: 2rem;
+  }
 }
 
 .join__input {
@@ -214,19 +226,67 @@ body {
   border: 2px solid #ef8354;
 }
 
+@media (min-width: 768px) {
+  .join__input {
+    width: 18rem;
+    height: 3rem;
+  }
+}
+
+.join__success {
+  padding: 1rem;
+  width: 12rem;
+  height: 13.5rem;
+  background-color: #274c77;
+  display: none;
+  position: fixed;
+  right: 4rem;
+  top: 8rem;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 5px 5px 0 #edeff5;
+          box-shadow: 0 5px 5px 0 #edeff5;
+}
+
+.join__success--title {
+  font-family: "Roboto Medium";
+  font-size: 0.75rem;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.join__success--btn {
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  font-family: "Roboto Medium";
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  background-color: #ef8354;
+  border: 2px solid #ef8354;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  -webkit-box-shadow: 0 5px 5px 0 #274c77;
+          box-shadow: 0 5px 5px 0 #274c77;
+  font-size: 0.7rem;
+}
+
+.join__success--btn:hover {
+  background-color: #ffffff;
+  color: #ef8354;
+  border: 2px solid #ffffff;
+}
+
 .login {
   padding: 2rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .login {
+    padding: 5rem;
+  }
 }
 
 .login__title {
@@ -236,14 +296,10 @@ body {
   margin: 0 0 1rem 0;
 }
 
-.login__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media (min-width: 768px) {
+  .login__title {
+    font-size: 2rem;
+  }
 }
 
 .login__input {
@@ -258,6 +314,13 @@ body {
 
 .login__input:focus {
   border: 2px solid #ef8354;
+}
+
+@media (min-width: 768px) {
+  .login__input {
+    width: 18rem;
+    height: 3rem;
+  }
 }
 
 .login__cta--btn {
@@ -281,6 +344,14 @@ body {
   background-color: #ef8354;
 }
 
+@media (min-width: 768px) {
+  .login__cta--btn {
+    width: 18rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+  }
+}
+
 .login__cta--cancel {
   width: 13rem;
   font-family: "Roboto Medium";
@@ -292,6 +363,14 @@ body {
   background-color: #ffffff;
   color: #ef8354;
   margin: 0 0 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .login__cta--cancel {
+    width: 18rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
 }
 
 .header {
@@ -312,30 +391,36 @@ body {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .header {
+    width: 30rem;
+    max-width: 48rem;
+    height: 5rem;
+  }
+}
+
 .header__wall--icon {
   width: 2rem;
   height: 2rem;
 }
 
-.header__dashboard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .header__wall--icon {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 .header__dashboard--icon {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .header__dashboard--icon {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 .header__dashboard--house-name {
@@ -356,6 +441,13 @@ body {
   height: 1.5rem;
 }
 
+@media (min-width: 768px) {
+  .header__cta--img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .menu {
   display: none;
   padding: 1rem 1rem;
@@ -363,21 +455,20 @@ body {
   right: 0.5rem;
   top: 3.5rem;
   background-color: #274c77;
-  height: 100vh;
+  height: 100%;
   width: 12rem;
 }
 
+@media (min-width: 768px) {
+  .menu {
+    width: 16rem;
+    right: 8rem;
+    top: 5rem;
+    padding: 2.5rem 1rem;
+  }
+}
+
 .menu__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 0 2rem 0;
 }
 
@@ -386,23 +477,23 @@ body {
   height: 2rem;
 }
 
+@media (min-width: 768px) {
+  .menu__wrapper--icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 .menu__wrapper--user-name {
   color: #edeff5;
   font-family: "Roboto Slab Medium";
   font-size: 1.5rem;
 }
 
-.menu__options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .menu__wrapper--user-name {
+    font-size: 2.5rem;
+  }
 }
 
 .menu__options--link {
@@ -427,21 +518,29 @@ body {
   color: #274c77;
 }
 
-.dashboard {
-  background-color: #ffffff;
+@media (min-width: 768px) {
+  .menu__options--btn {
+    font-size: 1.25rem;
+  }
 }
 
 .calendar {
-  margin: 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin: 1rem auto 0 auto;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   padding: 1rem;
   background-color: #ffffff;
+  max-width: 23.5rem;
+}
+
+@media (min-width: 768px) {
+  .calendar {
+    max-width: 48rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .calendar__description {
@@ -449,6 +548,13 @@ body {
   color: #ef8354;
   font-family: "Roboto Bold";
   font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .calendar__description {
+    font-size: 2.5rem;
+    margin: 0 auto 2rem auto;
+  }
 }
 
 .calendar__activity-wrapper {
@@ -464,20 +570,13 @@ body {
   margin: 0 0 1.5rem 0;
 }
 
+@media (min-width: 768px) {
+  .calendar__activity-wrapper {
+    width: 25rem;
+  }
+}
+
 .calendar__date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border: 1px solid #274c77;
   width: 3rem;
   height: 3rem;
@@ -488,28 +587,41 @@ body {
           box-shadow: 0 5px 5px 0 #edeff5;
 }
 
+@media (min-width: 768px) {
+  .calendar__date {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
 .calendar__date--dotw {
   font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .calendar__date--dotw {
+    font-size: 1rem;
+  }
 }
 
 .calendar__date--day {
   font-size: 0.75rem;
 }
 
+@media (min-width: 768px) {
+  .calendar__date--day {
+    font-size: 1rem;
+  }
+}
+
 .calendar__doing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 60%;
   margin: 0 0 0 0.5rem;
 }
 
 .calendar__doing--description {
-  height: 2rem;
+  height: 3rem;
+  width: 10rem;
   font-size: 0.9rem;
   border-radius: 4px;
   padding: 0.5rem 1rem;
@@ -520,33 +632,28 @@ body {
           box-shadow: 0 5px 5px 0 #edeff5;
 }
 
+@media (min-width: 768px) {
+  .calendar__doing--description {
+    width: 15rem;
+    font-size: 1.25rem;
+    height: 4rem;
+  }
+}
+
 .profile {
   background-color: #ffffff;
   padding: 2rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem 0;
+  margin: 1rem auto 0 auto;
+}
+
+@media (min-width: 768px) {
+  .profile {
+    width: 30rem;
+    max-width: 48rem;
+  }
 }
 
 .profile__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 0 2rem 0;
 }
 
@@ -555,19 +662,22 @@ body {
   height: 2rem;
 }
 
+@media (min-width: 768px) {
+  .profile__info--user-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 .profile__info--user-name {
   font-family: "Roboto Slab Bold";
   color: #274c77;
 }
 
-.update {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media (min-width: 768px) {
+  .profile__info--user-name {
+    font-size: 2.5rem;
+  }
 }
 
 .update__input {
@@ -584,6 +694,14 @@ body {
 
 .update__input:focus {
   border: 2px solid #ef8354;
+}
+
+@media (min-width: 768px) {
+  .update__input {
+    width: 18rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
 }
 
 .update__btn {
@@ -607,20 +725,26 @@ body {
   background-color: #ef8354;
 }
 
+@media (min-width: 768px) {
+  .update__btn {
+    width: 18rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+  }
+}
+
 .house {
   background-color: #ffffff;
   padding: 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem 0;
+  margin: 1rem auto 0 auto;
+  max-width: 23.5rem;
+}
+
+@media (min-width: 768px) {
+  .house {
+    width: 30rem;
+    max-width: 48rem;
+  }
 }
 
 .house__title {
@@ -630,20 +754,16 @@ body {
   color: #274c77;
 }
 
-.house__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .house__title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .house__container {
+    width: 25rem;
+  }
 }
 
 .house__icon {
@@ -652,11 +772,24 @@ body {
   margin: 0 0 1rem 0;
 }
 
+@media (min-width: 768px) {
+  .house__icon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
 .house__todo {
   color: #274c77;
   font-size: 1.5rem;
   margin: 0 0 1rem 0;
   font-family: "Roboto Medium";
+}
+
+@media (min-width: 768px) {
+  .house__todo {
+    font-size: 2rem;
+  }
 }
 
 .house__description {
@@ -667,21 +800,15 @@ body {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .house__description {
+    font-size: 1.25rem;
+    width: 12rem;
+  }
+}
+
 .house__list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .house__activity--btn {
@@ -704,22 +831,20 @@ body {
   background-color: #274c77;
 }
 
+@media (min-width: 768px) {
+  .house__activity--btn {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+}
+
 .house__pop-up {
   padding: 1rem;
   width: 12rem;
   height: 13.5rem;
   background-color: #274c77;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: fixed;
   right: 5.75rem;
   top: 8rem;
@@ -728,12 +853,27 @@ body {
           box-shadow: 0 5px 5px 0 #edeff5;
 }
 
+@media (min-width: 768px) {
+  .house__pop-up {
+    right: 15.75rem;
+    width: 16.5rem;
+    height: 20rem;
+  }
+}
+
 .house__pop-up--title {
   font-family: "Roboto Medium";
   font-size: 0.75rem;
   color: #ffffff;
   margin: 0 0 1rem 0;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .house__pop-up--title {
+    font-size: 1.25rem;
+    margin: 0 0 1.5rem 0;
+  }
 }
 
 .house__pop-up--selected-activity {
@@ -748,20 +888,12 @@ body {
   outline: none;
 }
 
-.house__pop-up--select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .house__pop-up--options {
+    width: 12rem;
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
 }
 
 .house__pop-up--btn {
@@ -787,6 +919,14 @@ body {
   border: 2px solid #ffffff;
 }
 
+@media (min-width: 768px) {
+  .house__pop-up--btn {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
+
 .house__pop-up--cancel {
   width: 8rem;
   font-family: "Roboto Medium";
@@ -805,19 +945,25 @@ body {
   color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .house__pop-up--cancel {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.1rem;
+  }
+}
+
 .wall {
+  margin: 0 auto;
   padding: 2rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .wall {
+    width: 30rem;
+    max-width: 48rem;
+  }
 }
 
 .wall__comment {
@@ -838,6 +984,13 @@ body {
           box-shadow: 0 5px 5px 0 #edeff5;
 }
 
+@media (min-width: 768px) {
+  .wall__comment {
+    width: 18rem;
+    height: 5rem;
+  }
+}
+
 .wall__content {
   width: 70%;
   height: 80%;
@@ -845,20 +998,10 @@ body {
   font-size: 0.8rem;
 }
 
-.wall__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .wall__content {
+    font-size: 1rem;
+  }
 }
 
 .wall__user-icon {
@@ -872,20 +1015,13 @@ body {
   font-size: 0.9rem;
 }
 
+@media (min-width: 768px) {
+  .wall__user-name {
+    font-size: 1rem;
+  }
+}
+
 .wall__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 1rem 0 0 0;
 }
 
@@ -908,6 +1044,14 @@ body {
   border: 2px solid #ef8354;
 }
 
+@media (min-width: 768px) {
+  .wall__input {
+    width: 18rem;
+    height: 5rem;
+    font-size: 1rem;
+  }
+}
+
 .wall__btn {
   font-size: 0.75rem;
   padding: 0.5rem 1rem;
@@ -928,6 +1072,14 @@ body {
 .wall__btn:hover {
   border: 2px solid #274c77;
   background-color: #274c77;
+}
+
+@media (min-width: 768px) {
+  .wall__btn {
+    width: 18rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
 }
 
 @font-face {

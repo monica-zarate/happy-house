@@ -3,26 +3,35 @@
 .profile {
   background-color: $white;
   padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem 0;
+  @extend .flex-center;
+  margin: 1rem auto 0 auto;
+
+  @include tablet {
+    width: 30rem;
+    max-width: 48rem;
+  }
 
   &__info {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
+    @extend .flex-center;
     margin: 0 0 2rem 0;
 
     &--user-icon {
       width: 2rem;
       height: 2rem;
+
+      @include tablet {
+        width: 3rem;
+        height: 3rem;
+      }
     }
 
     &--user-name {
       font-family: $slab-bold;
       color: $primary;
+
+      @include tablet {
+        font-size: 2.5rem;
+      }
     }
   }
 }
@@ -30,8 +39,7 @@
 // Update Profile Styles
 
 .update {
-  display: flex;
-  flex-direction: column;
+  @extend .flex-center;
 
   &__input {
     width: 12rem;
@@ -44,6 +52,12 @@
     box-shadow: 0 5px 5px 0 $background-primary;
     &:focus {
       border: 2px solid $highlight;
+    }
+
+    @include tablet {
+      width: 18rem;
+      height: 3rem;
+      font-size: 1rem;
     }
   }
 
@@ -64,6 +78,12 @@
     &:hover {
       border: 2px solid $highlight;
       background-color: $highlight;
+    }
+
+    @include tablet {
+      width: 18rem;
+      height: 3.5rem;
+      font-size: 1.25rem;
     }
   }
 }
