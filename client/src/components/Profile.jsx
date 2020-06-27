@@ -12,7 +12,12 @@ function Profile(props) {
             src={usericon}
             alt="user-icon"
           />
-          <h2 className="profile__info--user-name">{props.user.userName}</h2>
+          <h2
+            className="profile__info--user-name"
+            style={{ color: props.user.color }}
+          >
+            {props.user.userName}
+          </h2>
         </div>
         <form className="update">
           <input

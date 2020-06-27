@@ -1,4 +1,4 @@
-// Express Set-up
+// Express and npm set-up
 const express = require("express");
 const cors = require("cors");
 const { v4: uuidv4 } = require("uuid");
@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Get House per Name
+// Get House per Name and Post ToDosPerDay Routes
 app
   .route("/houses/:houseName")
   .get((req, res) => {
@@ -42,7 +42,7 @@ app
     res.json(myHouse);
   });
 
-// Get/Post House
+// Get/Post House Routes
 app
   .route("/houses")
   .get((req, res) => {
@@ -62,7 +62,7 @@ app
     res.json(housesArray);
   });
 
-// Get User per UserName Routes
+// Get/Post User per UserName Routes
 app.route("/users/:userName").get((req, res) => {
   let userName = req.params.userName;
   res.json(getUser(userName));

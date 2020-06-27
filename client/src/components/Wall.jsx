@@ -10,7 +10,9 @@ function Wall(props) {
           <p className="wall__content">{comment.comment}</p>
           <div className="wall__wrapper">
             <img src={usericon} alt="user-icon" className="wall__user-icon" />
-            <p className="wall__user-name">{comment.userName}</p>
+            <p className="wall__user-name" style={{ color: comment.userColor }}>
+              {comment.userName}
+            </p>
           </div>
         </div>
       ))}

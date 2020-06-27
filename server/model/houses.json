@@ -10,7 +10,6 @@
           "user": "Manuel",
           "userColor": "#248232"
         },
-
         {
           "toDoId": "6a73e773-5db1-428d-b1c7-216c90dd9dd8",
           "name": "meal prep",
@@ -18,16 +17,36 @@
           "userColor": "#eb9486"
         }
       ],
-      "tuesday": [],
+      "tuesday": [
+        {
+          "toDoId": "d464637c-f7b3-46a8-8ed0-42741a35bbc6",
+          "name": "dust",
+          "user": "Monica",
+          "userColor": "#eb9486"
+        }
+      ],
       "wednesday": [
         {
           "toDoId": "7980f68c-1176-4fe7-980c-a5e59965f595",
           "name": "vacuum",
           "user": "Manuel",
           "userColor": "#248232"
+        },
+        {
+          "toDoId": "a40ea228-ddab-4a18-adba-995a36e67493",
+          "name": "mop",
+          "user": "Monica",
+          "userColor": "#eb9486"
         }
       ],
-      "thursday": [],
+      "thursday": [
+        {
+          "toDoId": "381676fd-5fdd-43de-bbba-932bc293b8ea",
+          "name": "water the plants",
+          "user": "Manuel",
+          "userColor": "#248232"
+        }
+      ],
       "friday": [
         {
           "toDoId": "82b9f666-ae10-462f-ae79-d65bfb6a68e9",
@@ -44,7 +63,14 @@
           "userColor": "#248232"
         }
       ],
-      "sunday": []
+      "sunday": [
+        {
+          "toDoId": "29a9ab5d-5c71-44c9-a81a-581273ea85a0",
+          "name": "dust",
+          "user": "Monica",
+          "userColor": "#eb9486"
+        }
+      ]
     },
     "toDos": [
       { "id": "i", "name": "vacuum" },
@@ -62,13 +88,13 @@
         "id": "b",
         "userName": "Manuel",
         "comment": "We're out of milk!",
-        "timestamp": "June 9th 2020"
+        "userColor": "#248232"
       },
       {
         "id": "a",
         "userName": "Monica",
-        "comment": "I will go grocery shopping after work today",
-        "timestamp": "June 15th 2020"
+        "comment": "I'll go grocery shopping after work today",
+        "userColor": "#eb9486"
       }
     ]
   },
@@ -86,31 +112,88 @@
       { "id": "viii", "name": "water the plants" },
       { "id": "ix", "name": "dust" }
     ],
+    "toDosPerDay": {
+      "monday": [
+        {
+          "toDoId": "3f2419db-1f78-4f3e-bcb7-7ae422119b9e",
+          "name": "go grocery shopping",
+          "user": "Petite",
+          "userColor": "#248232"
+        },
+        {
+          "toDoId": "366df7f7-c6e2-4e80-83c0-094373d924a3",
+          "name": "meal prep",
+          "user": "Tete",
+          "userColor": "#9d8189"
+        }
+      ],
+      "tuesday": [
+        {
+          "toDoId": "5ceb3cda-0d7e-47e7-9e8a-52a6e7dbcade",
+          "name": "take out the trash",
+          "user": "Guante",
+          "userColor": "#ffd23f"
+        }
+      ],
+      "wednesday": [
+        {
+          "toDoId": "93c51cbf-9b65-4bdc-b69e-61d008017091",
+          "name": "water the plants",
+          "user": "Petite",
+          "userColor": "#248232"
+        },
+        {
+          "toDoId": "524e24a0-c379-4830-bc2c-b17f1db11e87",
+          "name": "go grocery shopping",
+          "user": "Tete",
+          "userColor": "#9d8189"
+        }
+      ],
+      "thursday": [
+        {
+          "toDoId": "1d0e6213-acc1-4241-a794-0885fa27e83a",
+          "name": "mop",
+          "user": "Guante",
+          "userColor": "#ffd23f"
+        }
+      ],
+      "friday": [
+        {
+          "toDoId": "0e7a3be1-a615-4798-8111-9983ecdffc90",
+          "name": "vacuum",
+          "user": "Tete",
+          "userColor": "#9d8189"
+        }
+      ],
+      "saturday": [
+        {
+          "toDoId": "2232c196-ca1c-45b2-b1c5-c00ec73d7422",
+          "name": "water the plants",
+          "user": "Guante",
+          "userColor": "#ffd23f"
+        }
+      ],
+      "sunday": []
+    },
     "comments": [
       {
         "id": "a",
         "userName": "Tete",
         "comment": "Any requests for the Farmer's Market? I'm going on Sunday",
-        "timestamp": "June 10th 2020"
+        "userColor": "#9d8189"
       },
       {
         "id": "b",
         "userName": "Guante",
         "comment": "Who's ready for Taco Tuesday?",
-        "timestamp": "June 16th 2020"
+        "userColor": "#ffd23f"
       },
       {
         "id": "c",
         "userName": "Petite",
         "comment": "I'm doing the dishes after school today!",
-        "timestamp": "June 9th 2020"
+        "userColor": "#248232"
       }
     ]
-  },
-  {
-    "id": "f8cf2591-949a-4afb-bd35-48b53158fa51",
-    "houseName": "Jicama",
-    "toDos": [],
-    "comments": []
   }
 ]
